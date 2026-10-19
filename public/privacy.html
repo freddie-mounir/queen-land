@@ -35,14 +35,111 @@
             </div>
         </section>
         <section class="bg-white px-4 py-20 sm:px-6">
-            <div class="mx-auto max-w-3xl rounded-3xl border border-gray-100 bg-queen-mist px-6 py-12 text-center shadow-sm md:px-12">
-                <span class="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-queen-gold/20 text-3xl text-queen-ink">
-                    <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
-                </span>
-                <p data-i18n="comingSoon" class="mb-3 text-sm font-extrabold uppercase tracking-widest text-queen-gold"></p>
-                <h2 data-i18n="pageComingSoonText" class="mb-5 text-2xl font-extrabold leading-relaxed text-queen-ink md:text-3xl"></h2>
-                <p data-i18n="pageComingSoonHelp" class="mb-8 leading-7 text-queen-body"></p>
-                <a data-i18n="contact" href="./contact.html" class="inline-flex rounded-full bg-queen-gold px-7 py-3 font-bold text-queen-ink transition hover:bg-yellow-400"></a>
+            <div class="mx-auto max-w-3xl">
+                <p data-i18n="privacyUpdated" class="mb-10 text-center text-sm font-semibold uppercase tracking-widest text-queen-gold"></p>
+                <div class="space-y-12">
+                    <article>
+                        <div class="mb-3 flex items-center gap-3">
+                            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-queen-gold/20 text-queen-ink"><i class="fa-solid fa-circle-info" aria-hidden="true"></i></span>
+                            <h2 data-i18n="privacyIntroTitle" class="text-xl font-extrabold text-queen-ink md:text-2xl"></h2>
+                        </div>
+                        <p data-i18n="privacyIntroText" class="leading-8 text-queen-body"></p>
+                    </article>
+
+                    <article>
+                        <div class="mb-3 flex items-center gap-3">
+                            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-queen-gold/20 text-queen-ink"><i class="fa-solid fa-clipboard-list" aria-hidden="true"></i></span>
+                            <h2 data-i18n="privacyCollectTitle" class="text-xl font-extrabold text-queen-ink md:text-2xl"></h2>
+                        </div>
+                        <p data-i18n="privacyCollectIntro" class="leading-8 text-queen-body"></p>
+                        <ul class="mt-4 space-y-3">
+                            <li class="flex gap-3"><i class="fa-solid fa-check mt-1.5 text-sm text-queen-gold" aria-hidden="true"></i><span data-i18n="privacyCollect1" class="leading-7 text-queen-body"></span></li>
+                            <li class="flex gap-3"><i class="fa-solid fa-check mt-1.5 text-sm text-queen-gold" aria-hidden="true"></i><span data-i18n="privacyCollect2" class="leading-7 text-queen-body"></span></li>
+                            <li class="flex gap-3"><i class="fa-solid fa-check mt-1.5 text-sm text-queen-gold" aria-hidden="true"></i><span data-i18n="privacyCollect3" class="leading-7 text-queen-body"></span></li>
+                            <li class="flex gap-3"><i class="fa-solid fa-check mt-1.5 text-sm text-queen-gold" aria-hidden="true"></i><span data-i18n="privacyCollect4" class="leading-7 text-queen-body"></span></li>
+                            <li class="flex gap-3"><i class="fa-solid fa-check mt-1.5 text-sm text-queen-gold" aria-hidden="true"></i><span data-i18n="privacyCollect5" class="leading-7 text-queen-body"></span></li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <div class="mb-3 flex items-center gap-3">
+                            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-queen-gold/20 text-queen-ink"><i class="fa-solid fa-gears" aria-hidden="true"></i></span>
+                            <h2 data-i18n="privacyUseTitle" class="text-xl font-extrabold text-queen-ink md:text-2xl"></h2>
+                        </div>
+                        <p data-i18n="privacyUseIntro" class="leading-8 text-queen-body"></p>
+                        <ul class="mt-4 space-y-3">
+                            <li class="flex gap-3"><i class="fa-solid fa-check mt-1.5 text-sm text-queen-gold" aria-hidden="true"></i><span data-i18n="privacyUse1" class="leading-7 text-queen-body"></span></li>
+                            <li class="flex gap-3"><i class="fa-solid fa-check mt-1.5 text-sm text-queen-gold" aria-hidden="true"></i><span data-i18n="privacyUse2" class="leading-7 text-queen-body"></span></li>
+                            <li class="flex gap-3"><i class="fa-solid fa-check mt-1.5 text-sm text-queen-gold" aria-hidden="true"></i><span data-i18n="privacyUse3" class="leading-7 text-queen-body"></span></li>
+                            <li class="flex gap-3"><i class="fa-solid fa-check mt-1.5 text-sm text-queen-gold" aria-hidden="true"></i><span data-i18n="privacyUse4" class="leading-7 text-queen-body"></span></li>
+                            <li class="flex gap-3"><i class="fa-solid fa-check mt-1.5 text-sm text-queen-gold" aria-hidden="true"></i><span data-i18n="privacyUse5" class="leading-7 text-queen-body"></span></li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <div class="mb-3 flex items-center gap-3">
+                            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-queen-gold/20 text-queen-ink"><i class="fa-solid fa-share-nodes" aria-hidden="true"></i></span>
+                            <h2 data-i18n="privacyShareTitle" class="text-xl font-extrabold text-queen-ink md:text-2xl"></h2>
+                        </div>
+                        <p data-i18n="privacyShareText" class="leading-8 text-queen-body"></p>
+                    </article>
+
+                    <article>
+                        <div class="mb-3 flex items-center gap-3">
+                            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-queen-gold/20 text-queen-ink"><i class="fa-solid fa-box-archive" aria-hidden="true"></i></span>
+                            <h2 data-i18n="privacyRetentionTitle" class="text-xl font-extrabold text-queen-ink md:text-2xl"></h2>
+                        </div>
+                        <p data-i18n="privacyRetentionText" class="leading-8 text-queen-body"></p>
+                    </article>
+
+                    <article>
+                        <div class="mb-3 flex items-center gap-3">
+                            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-queen-gold/20 text-queen-ink"><i class="fa-solid fa-cookie-bite" aria-hidden="true"></i></span>
+                            <h2 data-i18n="privacyCookiesTitle" class="text-xl font-extrabold text-queen-ink md:text-2xl"></h2>
+                        </div>
+                        <p data-i18n="privacyCookiesText" class="leading-8 text-queen-body"></p>
+                    </article>
+
+                    <article>
+                        <div class="mb-3 flex items-center gap-3">
+                            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-queen-gold/20 text-queen-ink"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span>
+                            <h2 data-i18n="privacySecurityTitle" class="text-xl font-extrabold text-queen-ink md:text-2xl"></h2>
+                        </div>
+                        <p data-i18n="privacySecurityText" class="leading-8 text-queen-body"></p>
+                    </article>
+
+                    <article>
+                        <div class="mb-3 flex items-center gap-3">
+                            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-queen-gold/20 text-queen-ink"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></span>
+                            <h2 data-i18n="privacyRightsTitle" class="text-xl font-extrabold text-queen-ink md:text-2xl"></h2>
+                        </div>
+                        <p data-i18n="privacyRightsIntro" class="leading-8 text-queen-body"></p>
+                        <ul class="mt-4 space-y-3">
+                            <li class="flex gap-3"><i class="fa-solid fa-check mt-1.5 text-sm text-queen-gold" aria-hidden="true"></i><span data-i18n="privacyRights1" class="leading-7 text-queen-body"></span></li>
+                            <li class="flex gap-3"><i class="fa-solid fa-check mt-1.5 text-sm text-queen-gold" aria-hidden="true"></i><span data-i18n="privacyRights2" class="leading-7 text-queen-body"></span></li>
+                            <li class="flex gap-3"><i class="fa-solid fa-check mt-1.5 text-sm text-queen-gold" aria-hidden="true"></i><span data-i18n="privacyRights3" class="leading-7 text-queen-body"></span></li>
+                            <li class="flex gap-3"><i class="fa-solid fa-check mt-1.5 text-sm text-queen-gold" aria-hidden="true"></i><span data-i18n="privacyRights4" class="leading-7 text-queen-body"></span></li>
+                            <li class="flex gap-3"><i class="fa-solid fa-check mt-1.5 text-sm text-queen-gold" aria-hidden="true"></i><span data-i18n="privacyRights5" class="leading-7 text-queen-body"></span></li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <div class="mb-3 flex items-center gap-3">
+                            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-queen-gold/20 text-queen-ink"><i class="fa-solid fa-rotate" aria-hidden="true"></i></span>
+                            <h2 data-i18n="privacyChangesTitle" class="text-xl font-extrabold text-queen-ink md:text-2xl"></h2>
+                        </div>
+                        <p data-i18n="privacyChangesText" class="leading-8 text-queen-body"></p>
+                    </article>
+
+                    <article>
+                        <div class="mb-3 flex items-center gap-3">
+                            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-queen-gold/20 text-queen-ink"><i class="fa-solid fa-address-book" aria-hidden="true"></i></span>
+                            <h2 data-i18n="privacyContactTitle" class="text-xl font-extrabold text-queen-ink md:text-2xl"></h2>
+                        </div>
+                        <p data-i18n="privacyContactText" class="leading-8 text-queen-body"></p>
+                        <a data-i18n="contact" href="./contact.html" class="mt-6 inline-flex rounded-full bg-queen-gold px-7 py-3 font-bold text-queen-ink transition hover:bg-yellow-400"></a>
+                    </article>
+                </div>
             </div>
         </section>
     </main>
