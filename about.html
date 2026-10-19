@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>من نحن | كوين لاند جروب</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Cairo', 'sans-serif'] }, colors: { queen: { gold: '#f7c800', ink: '#232323', body: '#6f6f6f', mist: '#f7f9fb', footer: '#1c1c1c' } } } } };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script>
+        (function () {
+            if (window.gsap && window.ScrollTrigger && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.documentElement.classList.add('gsap-init');
+                setTimeout(function () { document.documentElement.classList.remove('gsap-init'); }, 3000);
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body class="antialiased" data-page="about" data-page-title="aboutPageTitle" data-page-description="aboutPageDescription">
+    <site-header></site-header>
+    <main class="pt-20">
+        <section class="hero-section flex min-h-[42vh] items-center justify-center px-4 text-center">
+            <div class="max-w-4xl py-16">
+                <p data-i18n="companies" class="mb-3 font-bold text-queen-gold">الشركات</p>
+                <h1 data-i18n="aboutTitle" class="mb-5 text-4xl font-extrabold text-white md:text-6xl">من نحن كوين لاند</h1>
+                <p data-i18n="aboutPageIntro" class="text-xl font-semibold text-gray-100 md:text-2xl">شركة رائدة في تصنيع وتسويق الأسمدة</p>
+            </div>
+        </section>
+        <section class="bg-white py-16 md:py-20">
+            <div class="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+                <div class="self-center">
+                    <p data-i18n="aboutPageLead" class="mb-8 text-lg leading-8 text-queen-body"></p>
+                    <div class="mb-7 border-r-4 border-queen-gold pr-5">
+                        <h2 data-i18n="ourStory" class="mb-3 text-2xl font-extrabold text-queen-ink"></h2>
+                        <p data-i18n="ourStoryText" class="leading-8 text-queen-body"></p>
+                    </div>
+                    <div class="border-r-4 border-queen-gold pr-5">
+                        <h2 data-i18n="ourApproach" class="mb-3 text-2xl font-extrabold text-queen-ink"></h2>
+                        <p data-i18n="ourApproachText" class="leading-8 text-queen-body"></p>
+                    </div>
+                </div>
+                <div class="relative mx-auto w-full max-w-xl self-center">
+                    <div class="absolute -left-4 -top-4 h-full w-full rounded-3xl border-2 border-queen-gold"></div>
+                    <img data-i18n-alt="brand" src="https://queenland-group.com/images/company/2023-08-01-07-44-52logo.png" alt="كوين لاند" class="relative aspect-[4/3] w-full rounded-3xl bg-queen-mist object-contain p-8 shadow-xl">
+                    <div class="absolute -bottom-5 right-5 rounded-2xl bg-queen-gold px-6 py-4 text-center text-queen-ink shadow-lg">
+                        <span class="block text-3xl font-extrabold">٢٠١٠</span>
+                        <span data-i18n="since" class="text-sm font-bold">بداية العمل</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="relative overflow-hidden bg-queen-ink py-16 text-white" data-aos="fade-up">
+            <div class="pointer-events-none absolute inset-0 opacity-10" style="background-image: radial-gradient(#f7c800 1.5px, transparent 1.5px); background-size: 26px 26px;"></div>
+            <div class="relative mx-auto max-w-5xl px-4 sm:px-6">
+                <h2 data-i18n="statsHeading" class="mb-10 text-center text-3xl font-extrabold text-white">أرقامنا</h2>
+                <div class="grid grid-cols-1 gap-6 text-center sm:grid-cols-3">
+                    <div class="stat-card rounded-2xl border border-white/10 bg-white/5 px-6 py-8">
+                        <i class="fa-regular fa-calendar-check text-3xl text-queen-gold" aria-hidden="true"></i>
+                        <div class="mt-4 text-4xl font-extrabold text-queen-gold"><span data-counter="2010" data-counter-raw>2010</span></div>
+                        <div data-i18n="since" class="mt-2 font-bold text-white/70">بداية العمل</div>
+                    </div>
+                    <div class="stat-card rounded-2xl border border-white/10 bg-white/5 px-6 py-8">
+                        <i class="fa-solid fa-users text-3xl text-queen-gold" aria-hidden="true"></i>
+                        <div class="mt-4 text-4xl font-extrabold text-queen-gold"><span data-counter="2150">2,150</span></div>
+                        <div data-i18n="statClients" class="mt-2 font-bold text-white/70">عميل</div>
+                    </div>
+                    <div class="stat-card rounded-2xl border border-white/10 bg-white/5 px-6 py-8">
+                        <i class="fa-solid fa-user-tie text-3xl text-queen-gold" aria-hidden="true"></i>
+                        <div class="mt-4 text-4xl font-extrabold text-queen-gold"><span data-counter="850">850</span></div>
+                        <div data-i18n="statEmployees" class="mt-2 font-bold text-white/70">موظف</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-queen-mist py-16">
+            <div class="mx-auto max-w-4xl px-4 text-center sm:px-6">
+                <h2 data-i18n="ourMission" class="mb-4 text-3xl font-extrabold text-queen-ink"></h2>
+                <p data-i18n="ourMissionText" class="text-lg leading-8 text-queen-body"></p>
+                <a data-i18n="products" href="./products.html" class="mt-8 inline-flex rounded-full bg-queen-gold px-7 py-3 font-bold text-queen-ink transition hover:bg-yellow-400"></a>
+            </div>
+        </section>
+    </main>
+    <site-footer></site-footer>
+    <script src="./assets/components.js"></script>
+    <script src="./assets/site.js"></script>
+    <script src="./assets/animations.js"></script>
+</body>
+</html>

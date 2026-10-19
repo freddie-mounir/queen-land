@@ -1,0 +1,41 @@
+{
+  "categories": [
+    {
+      "id": "suspensions",
+      "name": { "ar": "كوين تاتش (معلقات)", "en": "Queen Touch Suspensions" },
+      "products": [
+        { "id": "productSuspension20", "name": { "ar": "20-20-20 كوين تاتش", "en": "Queen Touch 20-20-20" } },
+        { "id": "productSuspension22", "name": { "ar": "22-22-22 كوين تاتش معلق", "en": "Queen Touch Suspended 22-22-22" } },
+        { "id": "productSuspension19", "name": { "ar": "19-19-19 كوين تاتش معلق", "en": "Queen Touch Suspended 19-19-19" } }
+      ]
+    },
+    {
+      "id": "liquid",
+      "name": { "ar": "أسمدة سائلة", "en": "Liquid Fertilizers" },
+      "products": [
+        { "id": "bigFood", "name": { "ar": "25-25-25 بيج فوود", "en": "Big Food 25-25-25" } },
+        { "id": "queenRoots", "name": { "ar": "15-30-6 كوين روتس", "en": "Queen Roots 15-30-6" } },
+        { "id": "phantomPower", "name": { "ar": "16-8-8 فانتوم باور بلس", "en": "Phantom Power Plus 16-8-8" } },
+        { "id": "apache", "name": { "ar": "أباتشي (KTS) 0-0-36 (S)", "en": "Apache (KTS) 0-0-36 (S)" } }
+      ]
+    },
+    {
+      "id": "calcium",
+      "name": { "ar": "مركبات كالسيوم", "en": "Calcium Compounds" },
+      "products": [
+        { "id": "borocal", "name": { "ar": "بوروكال", "en": "Borocal" } },
+        { "id": "magnocal", "name": { "ar": "مغنوكال", "en": "Magnocal" } },
+        { "id": "moksal", "name": { "ar": "موك سال", "en": "Mok Sal" } },
+        { "id": "nitrocal", "name": { "ar": "نيتروكال بورون", "en": "Nitrocal Boron" } }
+      ]
+    },
+    {
+      "id": "superphosphate",
+      "name": { "ar": "سوبر فوسفات المصرين المحبب و الناعم", "en": "Egyptians Granular and Fine Superphosphate" },
+      "products": [
+        { "id": "singleSuperphosphate", "name": { "ar": "سوبر فوسفات المصريين الأحادي المحبب (١٥٪ خامس أكسيد الفوسفور) SSP", "en": "Egyptians Granular Single Superphosphate (15% P₂O₅) SSP" } },
+        { "id": "tripleSuperphosphate", "name": { "ar": "سوبر فوسفات المصريين الثلاثي المحبب (٤٦٪ خامس أكسيد الفوسفور) TSP", "en": "Egyptians Granular Triple Superphosphate (46% P₂O₅) TSP" } }
+      ]
+    }
+  ]
+}

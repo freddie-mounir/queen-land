@@ -1,0 +1,10 @@
+node_modules/
+.env
+npm-debug.log*
+*.log
+.DS_Store
+Thumbs.db
+
+# Large local media (exceeds GitHub's 100 MB file limit)
+*.mp4
+queen land.mp4

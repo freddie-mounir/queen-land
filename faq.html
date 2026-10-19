@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="الأسئلة الشائعة لمجموعة كوين لاند">
+    <title>الأسئلة الشائعة | كوين لاند جروب</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Cairo', 'sans-serif'] },
+                    colors: {
+                        queen: {
+                            gold: '#f7c800',
+                            ink: '#232323',
+                            body: '#6f6f6f',
+                            mist: '#f7f9fb',
+                            footer: '#1c1c1c',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script>
+        (function () {
+            if (window.gsap && window.ScrollTrigger && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.documentElement.classList.add('gsap-init');
+                setTimeout(function () { document.documentElement.classList.remove('gsap-init'); }, 3000);
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body class="antialiased" data-page="faq" data-page-title="faqPageTitle" data-page-description="faqPageDescription">
+    <site-header></site-header>
+    <main class="pt-20">
+        <section class="hero-section flex min-h-[42vh] items-center justify-center px-4 text-center">
+            <div class="max-w-4xl py-16">
+                <p data-i18n="faq" class="mb-3 font-bold text-queen-gold"></p>
+                <h1 data-i18n="faqPageIntro" class="mb-5 text-4xl font-extrabold text-white md:text-6xl"></h1>
+            </div>
+        </section>
+
+        <section class="bg-white px-4 py-20 sm:px-6">
+            <div class="mx-auto max-w-3xl rounded-3xl border border-gray-100 bg-queen-mist px-6 py-12 text-center shadow-sm md:px-12">
+                <div class="mx-auto mb-8 flex h-20 w-20 items-center justify-center rounded-full bg-queen-gold/20 text-3xl text-queen-ink">
+                    <i class="fa-regular fa-circle-question" aria-hidden="true"></i>
+                </div>
+                <div class="flex flex-col gap-4 text-start">
+                    <!-- FAQ Item 1 -->
+                    <details class="group w-full rounded-xl border border-gray-100 bg-white p-5 shadow-sm transition-all duration-300 hover:border-queen-gold/40">
+                        <summary class="text-queen-gold font-bold text-lg w-full flex items-center justify-between cursor-pointer">
+                            <span data-i18n="faq1"></span>
+                            <i class="fa-solid fa-chevron-down transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div data-i18n="faq1Answer" class="mt-4 text-queen-body text-sm leading-relaxed hidden group-open:block">
+                            Queen Land Group offers a comprehensive range of fertilizer products including suspension fertilizers (Queen Touch series), liquid fertilizers, calcium compounds, superphosphates (both single and triple), and specialized products like Big Food, Queen Roots, Phantom Power, Apache (KTS), Borocal, Magnocal, Mok Sal, and Nitrocal Boron. Our product portfolio also includes growth regulators, micronutrients, and bio-stimulants to meet various agricultural needs.
+                        </div>
+                    </details>
+
+                    <!-- FAQ Item 2 -->
+                    <details class="group w-full rounded-xl border border-gray-100 bg-white p-5 shadow-sm transition-all duration-300 hover:border-queen-gold/40">
+                        <summary class="text-queen-gold font-bold text-lg w-full flex items-center justify-between cursor-pointer">
+                            <span data-i18n="faq2"></span>
+                            <i class="fa-solid fa-chevron-down transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div data-i18n="faq2Answer" class="mt-4 text-queen-body text-sm leading-relaxed hidden group-open:block">
+                            To place an order for Queen Land products, you can contact our sales team directly via phone at 01110005585 or 01110005565, or email at info@queenland-group.com. You can also visit our office at 338 Al Haram Street, Giza, Egypt. Our team will assist you with product selection, quantity, and order processing.
+                        </div>
+                    </details>
+
+                    <!-- FAQ Item 3 -->
+                    <details class="group w-full rounded-xl border border-gray-100 bg-white p-5 shadow-sm transition-all duration-300 hover:border-queen-gold/40">
+                        <summary class="text-queen-gold font-bold text-lg w-full flex items-center justify-between cursor-pointer">
+                            <span data-i18n="faq3"></span>
+                            <i class="fa-solid fa-chevron-down transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div data-i18n="faq3Answer" class="mt-4 text-queen-body text-sm leading-relaxed hidden group-open:block">
+                            Delivery times vary depending on order size and destination within Egypt. Typically, orders within the Giza and Cairo governorates are delivered within 2-3 business days. For other regions, delivery may take 5-7 business days. Large bulk orders may require additional processing time, and our logistics team will provide you with a specific delivery schedule upon order confirmation.
+                        </div>
+                    </details>
+
+                    <!-- FAQ Item 4 -->
+                    <details class="group w-full rounded-xl border border-gray-100 bg-white p-5 shadow-sm transition-all duration-300 hover:border-queen-gold/40">
+                        <summary class="text-queen-gold font-bold text-lg w-full flex items-center justify-between cursor-pointer">
+                            <span data-i18n="faq4"></span>
+                            <i class="fa-solid fa-chevron-down transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div data-i18n="faq4Answer" class="mt-4 text-queen-body text-sm leading-relaxed hidden group-open:block">
+                            Yes, Queen Land Group provides comprehensive technical support for fertilizer application. Our team of experienced technicians and engineers can advise on optimal application rates, timing, and methods for different crops and soil conditions. We also offer soil testing consultation and can recommend the most suitable fertilizer products and combinations for your specific agricultural needs.
+                        </div>
+                    </details>
+
+                    <!-- FAQ Item 5 -->
+                    <details class="group w-full rounded-xl border border-gray-100 bg-white p-5 shadow-sm transition-all duration-300 hover:border-queen-gold/40">
+                        <summary class="text-queen-gold font-bold text-lg w-full flex items-center justify-between cursor-pointer">
+                            <span data-i18n="faq5"></span>
+                            <i class="fa-solid fa-chevron-down transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div data-i18n="faq5Answer" class="mt-4 text-queen-body text-sm leading-relaxed hidden group-open:block">
+                            Queen Land Group accepts the following payment methods: bank transfer, credit cards (Visa, MasterCard), and direct deposit. For commercial and bulk orders, we also offer flexible payment terms. Please contact our billing department for specific payment arrangements and invoicing details.
+                        </div>
+                    </details>
+
+                    <!-- FAQ Item 6 -->
+                    <details class="group w-full rounded-xl border border-gray-100 bg-white p-5 shadow-sm transition-all duration-300 hover:border-queen-gold/40">
+                        <summary class="text-queen-gold font-bold text-lg w-full flex items-center justify-between cursor-pointer">
+                            <span data-i18n="faq6"></span>
+                            <i class="fa-solid fa-chevron-down transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div data-i18n="faq6Answer" class="mt-4 text-queen-body text-sm leading-relaxed hidden group-open:block">
+                            To determine the right fertilizer for your crops, consider factors such as: crop type and growth stage, soil pH and nutrient levels, climate conditions, and specific nutritional requirements. We recommend starting with a soil test, then consulting with our technical team who can analyze the results and recommend the most appropriate Queen Land product or combination from our range of suspension, liquid, and foliar fertilizers, as well as growth regulators and micronutrients.
+                        </div>
+                    </details>
+
+                    <!-- FAQ Item 7 -->
+                    <details class="group w-full rounded-xl border border-gray-100 bg-white p-5 shadow-sm transition-all duration-300 hover:border-queen-gold/40">
+                        <summary class="text-queen-gold font-bold text-lg w-full flex items-center justify-between cursor-pointer">
+                            <span data-i18n="faq7"></span>
+                            <i class="fa-solid fa-chevron-down transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div data-i18n="faq7Answer" class="mt-4 text-queen-body text-sm leading-relaxed hidden group-open:block">
+                            Store Queen Land fertilizer products in a cool, dry place away from direct sunlight and moisture. Keep bags sealed tightly and off the ground on pallets or platforms. Protect from rain and humidity to prevent caking or degradation. Store away from incompatible materials, especially fuels, oxidizers, and pesticides. Follow the specific storage instructions on each product label, and keep products out of reach of children and unauthorized persons.
+                        </div>
+                    </details>
+
+                    <!-- FAQ Item 8 -->
+                    <details class="group w-full rounded-xl border border-gray-100 bg-white p-5 shadow-sm transition-all duration-300 hover:border-queen-gold/40">
+                        <summary class="text-queen-gold font-bold text-lg w-full flex items-center justify-between cursor-pointer">
+                            <span data-i18n="faq8"></span>
+                            <i class="fa-solid fa-chevron-down transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div data-i18n="faq8Answer" class="mt-4 text-queen-body text-sm leading-relaxed hidden group-open:block">
+                            Yes, Queen Land Group offers attractive discounts for bulk orders. The discount percentage varies based on order volume, frequency, and customer status. Regular customers and institutional buyers may qualify for preferential pricing. Contact our sales team for a customized quotation based on your specific volume requirements and frequency of order.
+                        </div>
+                    </details>
+
+                    <!-- FAQ Item 9 -->
+                    <details class="group w-full rounded-xl border border-gray-100 bg-white p-5 shadow-sm transition-all duration-300 hover:border-queen-gold/40">
+                        <summary class="text-queen-gold font-bold text-lg w-full flex items-center justify-between cursor-pointer">
+                            <span data-i18n="faq9"></span>
+                            <i class="fa-solid fa-chevron-down transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div data-i18n="faq9Answer" class="mt-4 text-queen-body text-sm leading-relaxed hidden group-open:block">
+                            For technical support and product inquiries, you can contact our technical department at: Phone: 02-35869574 or 093-4792105. Email: info@queenland-group.com. Our team is available during business hours to assist with technical questions, application guidance, and product recommendations. You can also visit our office at 338 Al Haram Street, Giza, Egypt.
+                        </div>
+                    </details>
+
+                    <!-- FAQ Item 10 -->
+                    <details class="group w-full rounded-xl border border-gray-100 bg-white p-5 shadow-sm transition-all duration-300 hover:border-queen-gold/40">
+                        <summary class="text-queen-gold font-bold text-lg w-full flex items-center justify-between cursor-pointer">
+                            <span data-i18n="faq10"></span>
+                            <i class="fa-solid fa-chevron-down transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <div data-i18n="faq10Answer" class="mt-4 text-queen-body text-sm leading-relaxed hidden group-open:block">
+                            When handling Queen Land fertilizer products, always wear appropriate personal protective equipment including gloves, goggles, and mask. Avoid breathing dust or contact with skin and eyes. Wash hands thoroughly after handling. Keep fertilizers away from food and feed. In case of accidental exposure, follow the first aid instructions on the product label and seek medical attention if needed. Store and transport in original containers, and follow all local regulations for agricultural chemical handling.
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+    <site-footer></site-footer>
+    <script src="./assets/components.js"></script>
+    <script src="./assets/site.js"></script>
+    <script src="./assets/animations.js"></script>
+</body>
+</html>

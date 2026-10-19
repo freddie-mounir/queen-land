@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>المركز الأعلامى | كوين لاند جروب</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { fontFamily: { sans: ['Cairo', 'sans-serif'] }, colors: { queen: { gold: '#f7c800', ink: '#232323', body: '#6f6f6f', mist: '#f7f9fb', footer: '#1c1c1c' } } } } };</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script>
+        (function () {
+            if (window.gsap && window.ScrollTrigger && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.documentElement.classList.add('gsap-init');
+                setTimeout(function () { document.documentElement.classList.remove('gsap-init'); }, 3000);
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body class="antialiased" data-page="media" data-page-title="mediaPageTitle" data-page-description="mediaPageDescription">
+    <site-header></site-header>
+    <main class="pt-20">
+        <section class="hero-section flex min-h-[42vh] items-center justify-center px-4 text-center"><div class="max-w-4xl py-16"><p data-i18n="media" class="mb-3 font-bold text-queen-gold"></p><h1 data-i18n="mediaPageIntro" class="mb-5 text-4xl font-extrabold text-white md:text-6xl"></h1><p data-i18n="mediaPageLead" class="text-xl font-semibold leading-relaxed text-gray-100 md:text-2xl"></p></div></section>
+        <section class="bg-queen-mist py-12 md:py-16">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="mb-8 flex flex-col justify-between gap-5 md:flex-row md:items-end">
+                    <div>
+                        <p data-i18n="media" class="mb-2 text-sm font-extrabold uppercase tracking-widest text-queen-gold"></p>
+                        <h2 data-i18n="latestNews" class="text-3xl font-extrabold text-queen-ink md:text-4xl"></h2>
+                    </div>
+                    <p data-i18n="newsGridNote" class="max-w-xl leading-7 text-queen-body"></p>
+                </div>
+
+                <div data-i18n-aria-label="newsCategories" class="mb-8 flex flex-wrap gap-2" role="group" aria-label="فئات الأخبار">
+                    <button data-news-filter="company" data-i18n="companyNews" type="button" aria-pressed="true" class="news-filter rounded-full bg-queen-gold px-5 py-2 text-sm font-bold text-queen-ink transition hover:bg-yellow-400"></button>
+                    <button data-news-filter="agriculture" data-i18n="agricultureNews" type="button" aria-pressed="false" class="news-filter rounded-full border border-gray-200 bg-white px-5 py-2 text-sm font-bold text-queen-body transition hover:border-queen-gold hover:text-queen-ink"></button>
+                </div>
+
+                <div id="news-grid">
+                    <div data-news-panel="company">
+                        <div class="grid gap-6 lg:grid-cols-12">
+                            <article class="hover-card overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm lg:col-span-7">
+                                <div class="relative h-64 overflow-hidden md:h-80">
+                                    <img data-i18n-alt="companyNewsImage" src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?auto=format&fit=crop&w=1200&q=70" alt="" class="h-full w-full object-cover" loading="lazy">
+                                    <span data-i18n="newsPlaceholder" class="absolute right-4 top-4 rounded-full bg-queen-gold px-4 py-1 text-xs font-extrabold text-queen-ink"></span>
+                                </div>
+                                <div class="p-6 md:p-8">
+                                    <div class="mb-3 flex items-center gap-3 text-sm text-queen-body">
+                                        <span data-i18n="companyNews" class="font-bold text-queen-gold"></span>
+                                        <span aria-hidden="true">•</span>
+                                        <span data-i18n="datePlaceholder"></span>
+                                    </div>
+                                    <h3 data-i18n="companyNewsPlaceholderTitle" class="mb-3 text-2xl font-extrabold leading-snug text-queen-ink md:text-3xl"></h3>
+                                    <p data-i18n="newsSummaryPlaceholder" class="mb-6 leading-7 text-queen-body"></p>
+                                    <a data-i18n="readMore" href="#" class="inline-flex items-center gap-2 font-bold text-queen-ink transition hover:text-queen-gold"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></a>
+                                </div>
+                            </article>
+                            <div class="grid gap-6 sm:grid-cols-2 lg:col-span-5 lg:grid-cols-1">
+                                <article class="hover-card flex flex-col overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm sm:flex-row lg:min-h-0">
+                                    <img data-i18n-alt="companyNewsImage" src="https://queenland-group.com/images/company/2023-08-01-07-44-52logo.png" alt="" class="h-44 w-full bg-queen-mist object-contain p-5 sm:h-auto sm:w-2/5" loading="lazy">
+                                    <div class="flex flex-1 flex-col justify-center p-5">
+                                        <div class="mb-2 flex items-center gap-2 text-xs text-queen-body"><span data-i18n="companyNews" class="font-bold text-queen-gold"></span><span aria-hidden="true">•</span><span data-i18n="datePlaceholder"></span></div>
+                                        <h3 data-i18n="companyNewsPlaceholderTitle2" class="mb-2 text-lg font-extrabold leading-snug text-queen-ink"></h3>
+                                        <p data-i18n="newsSummaryPlaceholder" class="text-sm leading-6 text-queen-body"></p>
+                                    </div>
+                                </article>
+                                <article class="hover-card flex flex-col overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm sm:flex-row lg:min-h-0">
+                                    <img data-i18n-alt="companyNewsImage" src="https://queenland-group.com/images/company/2023-08-01-07-44-52logo.png" alt="" class="h-44 w-full bg-queen-mist object-contain p-5 sm:h-auto sm:w-2/5" loading="lazy">
+                                    <div class="flex flex-1 flex-col justify-center p-5">
+                                        <div class="mb-2 flex items-center gap-2 text-xs text-queen-body"><span data-i18n="companyNews" class="font-bold text-queen-gold"></span><span aria-hidden="true">•</span><span data-i18n="datePlaceholder"></span></div>
+                                        <h3 data-i18n="companyNewsPlaceholderTitle3" class="mb-2 text-lg font-extrabold leading-snug text-queen-ink"></h3>
+                                        <p data-i18n="newsSummaryPlaceholder" class="text-sm leading-6 text-queen-body"></p>
+                                    </div>
+                                </article>
+                                <article class="hover-card flex flex-col overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm sm:flex-row lg:min-h-0">
+                                    <img data-i18n-alt="companyNewsImage" src="https://queenland-group.com/images/company/2023-08-01-07-44-52logo.png" alt="" class="h-44 w-full bg-queen-mist object-contain p-5 sm:h-auto sm:w-2/5" loading="lazy">
+                                    <div class="flex flex-1 flex-col justify-center p-5">
+                                        <div class="mb-2 flex items-center gap-2 text-xs text-queen-body"><span data-i18n="companyNews" class="font-bold text-queen-gold"></span><span aria-hidden="true">•</span><span data-i18n="datePlaceholder"></span></div>
+                                        <h3 data-i18n="companyNewsPlaceholderTitle4" class="mb-2 text-lg font-extrabold leading-snug text-queen-ink"></h3>
+                                        <p data-i18n="newsSummaryPlaceholder" class="text-sm leading-6 text-queen-body"></p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-news-panel="agriculture" class="hidden">
+                        <div class="grid gap-6 lg:grid-cols-12">
+                            <article class="hover-card overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm lg:col-span-7">
+                                <div class="relative h-64 overflow-hidden md:h-80">
+                                    <img data-i18n-alt="agricultureNewsImage" src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1200&q=70" alt="" class="h-full w-full object-cover" loading="lazy">
+                                    <span data-i18n="newsPlaceholder" class="absolute right-4 top-4 rounded-full bg-queen-gold px-4 py-1 text-xs font-extrabold text-queen-ink"></span>
+                                </div>
+                                <div class="p-6 md:p-8">
+                                    <div class="mb-3 flex items-center gap-3 text-sm text-queen-body">
+                                        <span data-i18n="agricultureNews" class="font-bold text-queen-gold"></span>
+                                        <span aria-hidden="true">•</span>
+                                        <span data-i18n="datePlaceholder"></span>
+                                    </div>
+                                    <h3 data-i18n="agricultureNewsPlaceholderTitle" class="mb-3 text-2xl font-extrabold leading-snug text-queen-ink md:text-3xl"></h3>
+                                    <p data-i18n="newsSummaryPlaceholder" class="mb-6 leading-7 text-queen-body"></p>
+                                    <a data-i18n="readMore" href="#" class="inline-flex items-center gap-2 font-bold text-queen-ink transition hover:text-queen-gold"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></a>
+                                </div>
+                            </article>
+                            <div class="grid gap-6 sm:grid-cols-2 lg:col-span-5 lg:grid-cols-1">
+                                <article class="hover-card flex flex-col overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm sm:flex-row lg:min-h-0">
+                                    <img data-i18n-alt="agricultureNewsImage" src="https://queenland-group.com/images/Products/2023-08-10-07-22-20WhatsApp%20Image%202023-08-10%20at%2010.20.27%20AM.jpeg" alt="" class="h-44 w-full object-cover sm:h-auto sm:w-2/5" loading="lazy">
+                                    <div class="flex flex-1 flex-col justify-center p-5">
+                                        <div class="mb-2 flex items-center gap-2 text-xs text-queen-body"><span data-i18n="agricultureNews" class="font-bold text-queen-gold"></span><span aria-hidden="true">•</span><span data-i18n="datePlaceholder"></span></div>
+                                        <h3 data-i18n="agricultureNewsPlaceholderTitle2" class="mb-2 text-lg font-extrabold leading-snug text-queen-ink"></h3>
+                                        <p data-i18n="newsSummaryPlaceholder" class="text-sm leading-6 text-queen-body"></p>
+                                    </div>
+                                </article>
+                                <article class="hover-card flex flex-col overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm sm:flex-row lg:min-h-0">
+                                    <img data-i18n-alt="agricultureNewsImage" src="https://queenland-group.com/images/Products/2023-08-09-11-09-07_WhatsApp%20Image%202023-08-09%20at%202.08.24%20PM.jpeg" alt="" class="h-44 w-full object-cover sm:h-auto sm:w-2/5" loading="lazy">
+                                    <div class="flex flex-1 flex-col justify-center p-5">
+                                        <div class="mb-2 flex items-center gap-2 text-xs text-queen-body"><span data-i18n="agricultureNews" class="font-bold text-queen-gold"></span><span aria-hidden="true">•</span><span data-i18n="datePlaceholder"></span></div>
+                                        <h3 data-i18n="agricultureNewsPlaceholderTitle3" class="mb-2 text-lg font-extrabold leading-snug text-queen-ink"></h3>
+                                        <p data-i18n="newsSummaryPlaceholder" class="text-sm leading-6 text-queen-body"></p>
+                                    </div>
+                                </article>
+                                <article class="hover-card flex flex-col overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm sm:flex-row lg:min-h-0">
+                                    <img data-i18n-alt="agricultureNewsImage" src="https://queenland-group.com/images/Products/2023-08-09-10-31-18_WhatsApp%20Image%202023-08-09%20at%201.29.43%20PM.jpeg" alt="" class="h-44 w-full object-cover sm:h-auto sm:w-2/5" loading="lazy">
+                                    <div class="flex flex-1 flex-col justify-center p-5">
+                                        <div class="mb-2 flex items-center gap-2 text-xs text-queen-body"><span data-i18n="agricultureNews" class="font-bold text-queen-gold"></span><span aria-hidden="true">•</span><span data-i18n="datePlaceholder"></span></div>
+                                        <h3 data-i18n="agricultureNewsPlaceholderTitle4" class="mb-2 text-lg font-extrabold leading-snug text-queen-ink"></h3>
+                                        <p data-i18n="newsSummaryPlaceholder" class="text-sm leading-6 text-queen-body"></p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 flex flex-col items-center justify-between gap-4 rounded-2xl border border-gray-100 bg-white p-5 text-center sm:flex-row sm:text-start">
+                    <p data-i18n="newsGridNote" class="leading-7 text-queen-body"></p>
+                    <a data-i18n="contactForUpdates" href="./contact.html" class="inline-flex shrink-0 rounded-full bg-queen-gold px-6 py-3 font-bold text-queen-ink transition hover:bg-yellow-400"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <site-footer></site-footer>
+    <script src="./assets/components.js"></script>
+    <script src="./assets/site.js"></script>
+    <script src="./assets/animations.js"></script>
+</body>
+</html>

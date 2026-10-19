@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="كوين لاند جروب للاستثمار والتنمية، رائدة في صناعة الأسمدة في مصر منذ عام ٢٠١٠.">
+    <title>كوين لاند جروب | Queenland Group</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Cairo', 'sans-serif'], english: ['Inter', 'sans-serif'] },
+                    colors: {
+                        queen: {
+                            gold: '#f7c800',
+                            ink: '#232323',
+                            body: '#6f6f6f',
+                            mist: '#f7f9fb',
+                            footer: '#1c1c1c',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script>
+        (function () {
+            if (window.gsap && window.ScrollTrigger && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.documentElement.classList.add('gsap-init');
+                setTimeout(function () { document.documentElement.classList.remove('gsap-init'); }, 3000);
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body class="antialiased" data-page="home" data-page-title="homePageTitle" data-page-description="homePageDescription">
+    <site-header></site-header>
+
+    <main>
+        <section class="hero-section relative flex min-h-[78vh] items-center justify-center overflow-hidden px-4 pt-20 text-center sm:px-6">
+            <div class="relative z-10 mx-auto w-full max-w-5xl">
+                <span data-i18n="heroBadge" data-aos="fade-down" class="mb-6 inline-block rounded-full border border-queen-gold/70 bg-queen-gold/15 px-4 py-1 text-sm font-bold text-queen-gold">
+                    كوين لاند جروب للاستثمار والتنمية
+                </span>
+                <h1 data-i18n="brand" data-aos="fade-up" class="mb-5 text-5xl font-extrabold leading-tight text-white md:text-7xl">كوين لاند</h1>
+                <p data-i18n="heroText" data-aos="fade-up" data-aos-delay="150" class="mx-auto mb-9 max-w-3xl text-lg leading-relaxed text-gray-100 md:text-2xl">
+                    إحدى الشركات الرائدة في صناعة الأسمدة في مصر منذ عام ٢٠١٠
+                </p>
+                <div data-aos="zoom-in" data-aos-delay="250" class="flex flex-col items-center justify-center gap-4 sm:flex-row">
+                    <a data-i18n="about" href="#about" class="w-full rounded-full bg-queen-gold px-8 py-3 font-extrabold text-queen-ink transition hover:-translate-y-1 hover:bg-yellow-400 sm:w-auto">
+                        من نحن
+                    </a>
+                    <a data-i18n="newProducts" href="#products" class="w-full rounded-full border-2 border-white px-8 py-3 font-bold text-white transition hover:bg-white hover:text-queen-ink sm:w-auto">
+                        المنتجات الجديده
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="photo-section relative py-20 md:py-24" style="background-image: url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1920&q=70');">
+            <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+                <div data-aos="fade-left">
+                    <p data-i18n="companies" class="mb-2 text-sm font-extrabold uppercase tracking-widest text-queen-gold">الشركات</p>
+                    <h2 data-i18n="aboutTitle" class="mb-6 text-3xl font-extrabold text-queen-ink md:text-4xl">من نحن كوين لاند</h2>
+                    <div class="mb-7 h-1 w-20 rounded-full bg-queen-gold"></div>
+                    <p data-i18n="aboutText" class="text-base leading-8 text-queen-body md:text-lg">
+                        إحدى شركات كوين لاند جروب للاستثمار والتنمية الرائدة في صناعة الأسمدة في مصر. تم أنشائها عام ٢٠١٠ وهي تعمل في مجال تصنيع الأسمدة وتسويقها من خلال فريق متخصص من الفنيين والمهندسين الخبراء في مجال تصنيع الاسمدة وهي بذلك تتطلع لأن تأخد الريادة في عالم صناعة الأسمدة لتلبية احتياجات العملاء في مصر والعالم . خطوط أنتاجنا متكاملة من الأسمدة ؛ مثل الاسمدة الفوسفاتية احادية او ثلاثية او فوسفات صخرية والأسمدة الذائبة والسائلة والمعلقة و الأسمدة الورقية و منظمات النمو المختلفة والعناصر الصغرى والمنشطات الحيوية
+                    </p>
+                    <a href="./about.html" class="mt-8 inline-flex items-center gap-3 rounded-full bg-queen-gold px-6 py-3 font-bold text-queen-ink transition hover:bg-yellow-400">
+                        <span data-i18n="readMore">عرض المزيد</span> <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div data-aos="fade-right" class="relative mx-auto w-full max-w-lg">
+                    <div class="absolute -left-4 -top-4 h-full w-full rounded-3xl border-2 border-queen-gold"></div>
+                    <img data-i18n-alt="brand" src="https://queenland-group.com/images/company/2023-08-01-07-44-52logo.png" alt="كوين لاند جروب" class="relative aspect-[4/3] w-full rounded-3xl bg-queen-mist object-contain p-8 shadow-xl">
+                    <div class="absolute -bottom-5 right-5 rounded-2xl bg-queen-gold px-6 py-4 text-center text-queen-ink shadow-lg">
+                        <span class="block text-3xl font-extrabold" dir="ltr">2010</span>
+                        <span class="text-sm font-bold" dir="ltr">Established</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="bg-queen-mist py-20 md:py-24">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="mb-12 flex flex-col justify-between gap-5 sm:flex-row sm:items-end" data-aos="fade-up">
+                    <div>
+                        <p data-i18n="products" class="mb-2 text-sm font-extrabold uppercase tracking-widest text-queen-gold">منتجاتنا</p>
+                        <h2 data-i18n="newProducts" class="text-3xl font-extrabold text-queen-ink md:text-4xl">المنتجات الجديده</h2>
+                    </div>
+                    <a href="./products.html" class="inline-flex items-center gap-2 font-bold text-queen-ink transition hover:text-queen-gold">
+                        <span data-i18n="readMore">عرض المزيد</span> <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div class="marquee" data-marquee data-aos="fade-up">
+                    <div class="marquee-track" data-marquee-track>
+                        <article class="marquee-item hover-card overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm">
+                            <a href="./products.html#suspensions" class="block">
+                                <img data-i18n-alt="suspensions" src="https://queenland-group.com/images/Products/2023-08-10-07-22-20WhatsApp%20Image%202023-08-10%20at%2010.20.27%20AM.jpeg" alt="أسمدة كوين تاتش المعلقة" class="h-48 w-full object-cover">
+                                <div class="p-6">
+                                    <h3 data-i18n="suspensions" class="mb-4 text-xl font-extrabold text-queen-ink">كوين تاتش (معلقات)</h3>
+                                    <ul class="space-y-2 text-sm leading-relaxed">
+                                        <li data-i18n="productSuspension20">20-20-20 كوين تاتش</li>
+                                        <li data-i18n="productSuspension22">22-22-22 كوين تاتش معلق</li>
+                                        <li data-i18n="productSuspension19">19-19-19 كوين تاتش معلق</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="marquee-item hover-card overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm">
+                            <a href="./products.html#liquid-fertilizers" class="block">
+                                <img data-i18n-alt="liquid" src="https://queenland-group.com/images/Products/2023-08-09-11-09-07_WhatsApp%20Image%202023-08-09%20at%202.08.24%20PM.jpeg" alt="الأسمدة السائلة" class="h-48 w-full object-cover">
+                                <div class="p-6">
+                                    <h3 data-i18n="liquid" class="mb-4 text-xl font-extrabold text-queen-ink">أسمدة سائلة</h3>
+                                    <ul class="space-y-2 text-sm leading-relaxed">
+                                        <li data-i18n="bigFood">25-25-25 بيج فوود</li>
+                                        <li data-i18n="queenRoots">15-30-6 كوين روتس</li>
+                                        <li data-i18n="phantomPower">16-8-8 فانتوم باور بلس</li>
+                                        <li data-i18n="apache">أباتشي (KTS) 0-0-36 (S)</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="marquee-item hover-card overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm">
+                            <a href="./products.html#calcium-compounds" class="block">
+                                <img data-i18n-alt="calcium" src="https://queenland-group.com/images/Products/2023-08-09-10-31-18_WhatsApp%20Image%202023-08-09%20at%201.29.43%20PM.jpeg" alt="مركبات الكالسيوم" class="h-48 w-full object-cover">
+                                <div class="p-6">
+                                    <h3 data-i18n="calcium" class="mb-4 text-xl font-extrabold text-queen-ink">مركبات كالسيوم</h3>
+                                    <ul class="space-y-2 text-sm leading-relaxed">
+                                        <li data-i18n="borocal">بوروكال</li>
+                                        <li data-i18n="magnocal">مغنوكال</li>
+                                        <li data-i18n="moksal">موك سال</li>
+                                        <li data-i18n="nitrocal">نيتروكال بورون</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="marquee-item hover-card overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm">
+                            <a href="./products.html#superphosphates" class="block">
+                                <img data-i18n-alt="superphosphate" src="https://queenland-group.com/images/Products/2023-08-09-10-48-03_WhatsApp%20Image%202023-08-09%20at%201.46.18%20PM.jpeg" alt="سوبر فوسفات المصريين المحبب والناعم" class="h-48 w-full object-cover">
+                                <div class="p-6">
+                                    <h3 data-i18n="superphosphate" class="mb-4 text-xl font-extrabold text-queen-ink">سوبر فوسفات المصرين المحبب و الناعم</h3>
+                                    <ul class="space-y-2 text-sm leading-relaxed">
+                                        <li data-i18n="singleSuperphosphate">سوبر فوسفات المصريين الأحادي المحبب (١٥٪ خامس أكسيد الفوسفور) SSP</li>
+                                        <li data-i18n="tripleSuperphosphate">سوبر فوسفات المصريين الثلاثي المحبب (٤٦٪ خامس أكسيد الفوسفور) TSP</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+
+                <p data-i18n="productRange" class="mt-8 text-center text-sm text-queen-body">
+                    كوين تاتش N-P-K بودر، والأسمدة الفوسفاتية الأحادية والثلاثية وفوسفات صخرية، والأسمدة الورقية ومنظمات النمو والعناصر الصغرى والمنشطات الحيوية.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact" class="photo-section py-20" style="background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1920&q=70');">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="mb-10 text-center" data-aos="fade-up">
+                    <p data-i18n="brand" class="mb-2 text-sm font-extrabold uppercase tracking-widest text-queen-gold">كوين لاند</p>
+                    <h2 data-i18n="contact" class="text-3xl font-extrabold text-queen-ink md:text-4xl">تواصل معنا</h2>
+                </div>
+                <div class="grid gap-5 md:grid-cols-3">
+                    <div class="photo-card rounded-2xl border border-gray-100 p-6 text-center" style="background-image: url('https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?auto=format&fit=crop&w=800&q=70');">
+                        <i class="fa-solid fa-location-dot mb-4 text-2xl text-queen-gold" aria-hidden="true"></i>
+                        <p data-i18n="address" class="font-bold leading-7 text-queen-ink">الجيزة - ٣٣٨ شارع الهرم</p>
+                    </div>
+                    <div class="photo-card rounded-2xl border border-gray-100 p-6 text-center" style="background-image: url('https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=800&q=70');">
+                        <i class="fa-solid fa-phone mb-4 text-2xl text-queen-gold" aria-hidden="true"></i>
+                        <p dir="ltr" class="mb-2 font-bold text-queen-ink">01110005585 - 01110005565</p>
+                        <p dir="ltr" class="font-bold text-queen-ink">02-35869574 - 093-4792105</p>
+                        <a data-i18n="callUs" href="tel:+201110005585" class="mx-auto mt-4 flex w-fit items-center gap-2 rounded-full bg-queen-gold px-6 py-3 font-extrabold text-queen-ink transition hover:bg-yellow-400"></a>
+                    </div>
+                    <div class="photo-card rounded-2xl border border-gray-100 p-6 text-center" style="background-image: url('https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=800&q=70');">
+                        <i class="fa-solid fa-envelope mb-4 text-2xl text-queen-gold" aria-hidden="true"></i>
+                        <a href="mailto:info@queenland-group.com" class="block break-all font-bold text-queen-ink">info@queenland-group.com</a>
+                        <a data-i18n="emailUs" href="mailto:info@queenland-group.com" class="mx-auto mt-4 flex w-fit items-center gap-2 rounded-full bg-queen-gold px-6 py-3 font-extrabold text-queen-ink transition hover:bg-yellow-400"></a>
+                    </div>
+                </div>
+                <div class="mt-8 text-center">
+                    <a href="./contact.html" class="inline-flex items-center gap-3 rounded-full bg-queen-gold px-7 py-3 font-extrabold text-queen-ink transition hover:bg-yellow-400">
+                        <span data-i18n="messageUs">راسلنا الآن</span> <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <site-footer></site-footer>
+
+    <script src="./assets/components.js"></script>
+    <script src="./assets/site.js"></script>
+    <script src="./assets/animations.js"></script>
+</body>
+</html>
