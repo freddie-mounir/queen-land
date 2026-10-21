@@ -33,6 +33,24 @@
         return name[currentLanguage()] || name.en || name.ar || '';
     }
 
+    function isOrderable(product) {
+        return product.orderable !== false;
+    }
+
+    function orderableCategories() {
+        return catalog
+            .map(function (category) {
+                return {
+                    id: category.id,
+                    name: category.name,
+                    products: (category.products || []).filter(isOrderable),
+                };
+            })
+            .filter(function (category) {
+                return category.products.length > 0;
+            });
+    }
+
     function buildOption(value, label, categoryId) {
         var option = document.createElement('option');
         option.value = value;
@@ -52,13 +70,14 @@
 
     function renderCategories() {
         var previous = categorySelect.value;
+        var categories = orderableCategories();
 
         clearCatalogOptions(categorySelect);
-        catalog.forEach(function (category) {
+        categories.forEach(function (category) {
             categorySelect.appendChild(buildOption(category.id, localizedName(category.name)));
         });
 
-        var stillValid = catalog.some(function (category) {
+        var stillValid = categories.some(function (category) {
             return category.id === previous;
         });
         categorySelect.value = stillValid ? previous : '';
@@ -68,7 +87,26 @@
         var category = catalog.filter(function (item) {
             return item.id === categoryId;
         })[0];
-        return category ? category.products || [] : [];
+        return category ? (category.products || []).filter(isOrderable) : [];
+    }
+
+    function applyRequestedProduct() {
+        var requestedId = new URLSearchParams(window.location.search).get('product');
+        if (!requestedId) return;
+
+        var match = null;
+        orderableCategories().forEach(function (category) {
+            category.products.forEach(function (product) {
+                if (product.id === requestedId) {
+                    match = { categoryId: category.id, productId: product.id };
+                }
+            });
+        });
+        if (!match) return;
+
+        categorySelect.value = match.categoryId;
+        renderProducts();
+        productSelect.value = match.productId;
     }
 
     function renderProducts() {
@@ -172,6 +210,7 @@
             catalog = (data && data.categories) || [];
             renderCategories();
             renderProducts();
+            applyRequestedProduct();
         })
         .catch(function () {
             clearCatalogOptions(categorySelect);

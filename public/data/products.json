@@ -2,39 +2,441 @@
   "categories": [
     {
       "id": "suspensions",
-      "name": { "ar": "كوين تاتش (معلقات)", "en": "Queen Touch Suspensions" },
+      "name": { "ar": "أسمدة كوين تاتش الذائبة", "en": "Queen Touch Water-Soluble NPK" },
       "products": [
-        { "id": "productSuspension20", "name": { "ar": "20-20-20 كوين تاتش", "en": "Queen Touch 20-20-20" } },
-        { "id": "productSuspension22", "name": { "ar": "22-22-22 كوين تاتش معلق", "en": "Queen Touch Suspended 22-22-22" } },
-        { "id": "productSuspension19", "name": { "ar": "19-19-19 كوين تاتش معلق", "en": "Queen Touch Suspended 19-19-19" } }
+        {
+          "id": "productSuspension20",
+          "name": { "ar": "كوين تاتش 20-20-20", "en": "Queen Touch 20-20-20" },
+          "tagline": { "ar": "سماد NPK ذو ذوبان تام في الماء", "en": "Fully water-soluble NPK fertilizer" },
+          "image": "assets/queen-touch-20-20-20.jpeg",
+          "overview": {
+            "ar": "سماد متوازن يحتوي على العناصر الكبرى بنسب متساوية، عالي الذوبان في الماء، يناسب جميع أنواع الأراضي ويُستخدم في شبكات الري بالتنقيط والرش الورقي.",
+            "en": "A balanced fertilizer containing the major nutrients in equal proportions. Highly soluble in water, suitable for all soil types, and ideal for drip irrigation systems and foliar spraying."
+          },
+          "composition": [
+            { "ar": "نيتروجين (N) 20%", "en": "Nitrogen (N) 20%" },
+            { "ar": "فوسفور (P₂O₅) 20%", "en": "Phosphorus (P₂O₅) 20%" },
+            { "ar": "بوتاسيوم (K₂O) 20%", "en": "Potassium (K₂O) 20%" }
+          ],
+          "benefits": [
+            { "ar": "يوفر توازناً بين النمو الخضري والنمو الزهري والثمري.", "en": "Balances vegetative growth with flowering and fruiting." },
+            { "ar": "يُكوّن وسطاً حامضياً حول الجذور يحد من نمو الفطريات الممرضة.", "en": "Creates an acidic zone around the roots that limits pathogenic fungi." },
+            { "ar": "يزيد سرعة انتقال الكربوهيدرات من المجموع الخضري إلى الثمار فيزيد حجمها وجودتها.", "en": "Speeds the transfer of carbohydrates from foliage to fruits, improving their size and quality." },
+            { "ar": "يزيد تحمّل النباتات للإجهاد مثل الجفاف وملوحة التربة والمياه.", "en": "Improves plant tolerance to stress such as drought and soil/water salinity." },
+            { "ar": "يزيد نسبة التزهير والعقد وكمية المحصول.", "en": "Increases flowering, fruit set and total yield." }
+          ],
+          "usage": [
+            { "ar": "رش ورقي: 2–4 كجم للفدان.", "en": "Foliar spray: 2–4 kg per acre." },
+            { "ar": "مع مياه الري بالتنقيط: 2–4 كجم للفدان.", "en": "With drip irrigation: 2–4 kg per acre." }
+          ]
+        },
+        {
+          "id": "productSuspension22",
+          "orderable": false,
+          "name": { "ar": "كوين تاتش 22-22-22 معلق", "en": "Queen Touch Suspended 22-22-22" }
+        },
+        {
+          "id": "productSuspension19",
+          "name": { "ar": "كوين تاتش 19-19-19 + مغنيسيوم", "en": "Queen Touch 19-19-19 + Mg" },
+          "tagline": { "ar": "سماد NPK متوازن غني بالمغنيسيوم", "en": "Balanced NPK fertilizer enriched with magnesium" },
+          "image": "assets/queen-touch-19-19-19.jpeg",
+          "overview": {
+            "ar": "سماد متوازن يحتوي على العناصر الكبرى بنسب متساوية مع إضافة المغنيسيوم، عالي الذوبان في الماء ومناسب لجميع أنواع الأراضي وشبكات الري.",
+            "en": "A balanced fertilizer with equal major nutrients plus magnesium. Highly water-soluble and suitable for all soil types and irrigation systems."
+          },
+          "composition": [
+            { "ar": "نيتروجين (N) 19%", "en": "Nitrogen (N) 19%" },
+            { "ar": "فوسفور (P₂O₅) 19%", "en": "Phosphorus (P₂O₅) 19%" },
+            { "ar": "بوتاسيوم (K₂O) 19%", "en": "Potassium (K₂O) 19%" },
+            { "ar": "مغنيسيوم (Mg) 1.24%", "en": "Magnesium (Mg) 1.24%" }
+          ],
+          "benefits": [
+            { "ar": "محتوى متوازن من العناصر الكبرى وفعّال لجميع المحاصيل.", "en": "Balanced major-nutrient content that is effective for all crops." },
+            { "ar": "يُكوّن وسطاً حامضياً حول الجذور يحد من نمو الفطريات الممرضة.", "en": "Creates an acidic root zone that limits pathogenic fungi." },
+            { "ar": "يزيد سرعة انتقال الكربوهيدرات إلى الثمار فيزيد حجمها وجودتها.", "en": "Speeds carbohydrate transfer to fruits, improving size and quality." },
+            { "ar": "المغنيسيوم يدخل في تركيب الكلوروفيل ويساعد على زيادة المحصول والتزهير والعقد.", "en": "Magnesium is part of chlorophyll and supports higher yield, flowering and fruit set." },
+            { "ar": "يزيد تحمّل النباتات للجفاف وملوحة التربة والمياه.", "en": "Improves tolerance to drought and soil/water salinity." }
+          ],
+          "usage": [
+            { "ar": "رش ورقي: 2–4 كجم للفدان.", "en": "Foliar spray: 2–4 kg per acre." },
+            { "ar": "مع مياه الري بالتنقيط: 2–4 كجم للفدان.", "en": "With drip irrigation: 2–4 kg per acre." }
+          ]
+        },
+        {
+          "id": "queenTouch105010",
+          "name": { "ar": "كوين تاتش 10-50-10", "en": "Queen Touch 10-50-10" },
+          "tagline": { "ar": "سماد فوسفاتي عالي الذوبان", "en": "High-phosphorus water-soluble fertilizer" },
+          "image": "assets/queen-touch-10-50-10.jpeg",
+          "overview": {
+            "ar": "سماد عالي المحتوى من الفوسفور مع ذوبان تام في الماء، يُستخدم كبادئ بعد الشتل ويحفّز نمو المجموع الجذري والتزهير. مسحوق بلوري أحمر.",
+            "en": "A high-phosphorus fertilizer with complete water solubility. Used as a starter after transplanting to stimulate root growth and flowering. Red crystalline powder."
+          },
+          "composition": [
+            { "ar": "نيتروجين (N) 10%", "en": "Nitrogen (N) 10%" },
+            { "ar": "فوسفور (P₂O₅) 50%", "en": "Phosphorus (P₂O₅) 50%" },
+            { "ar": "بوتاسيوم (K₂O) 10%", "en": "Potassium (K₂O) 10%" }
+          ],
+          "benefits": [
+            { "ar": "يُستخدم كبادئ بعد الشتل ويعمل على زيادة نمو المجموع الجذري.", "en": "Used as a starter after transplanting to boost root development." },
+            { "ar": "يزيد كفاءة امتصاص العناصر ويسرّع عملية التزهير.", "en": "Improves nutrient uptake and accelerates flowering." },
+            { "ar": "يناسب جميع أنواع الأراضي وخاصة منخفضة المحتوى الغذائي.", "en": "Suitable for all soil types, especially nutrient-poor soils." },
+            { "ar": "يعمل على تبكير الإنتاج وزيادة المحصول وجودته.", "en": "Promotes earlier production and higher yield and quality." },
+            { "ar": "يُستخدم في شبكات الري بالتنقيط والرش الورقي.", "en": "Suitable for drip irrigation networks and foliar spraying." }
+          ],
+          "usage": [
+            { "ar": "رش ورقي: 2–4 كجم للفدان.", "en": "Foliar spray: 2–4 kg per acre." },
+            { "ar": "مع مياه الري بالتنقيط: 2–4 كجم للفدان.", "en": "With drip irrigation: 2–4 kg per acre." }
+          ]
+        },
+        {
+          "id": "queenTouch153015",
+          "name": { "ar": "كوين تاتش 15-30-15", "en": "Queen Touch 15-30-15" },
+          "tagline": { "ar": "سماد فوسفاتي متوازن عالي الذوبان", "en": "Balanced high-phosphorus water-soluble fertilizer" },
+          "image": "assets/queen-touch-15-30-15.jpeg",
+          "overview": {
+            "ar": "سماد عالي الفوسفور مع النيتروجين والبوتاسيوم وذوبان تام في الماء، يُستخدم كبادئ بعد الشتل ويحفّز الجذور والتزهير. مسحوق بلوري أحمر.",
+            "en": "A high-phosphorus fertilizer with nitrogen and potassium and complete water solubility. Used as a starter after transplanting to stimulate roots and flowering. Red crystalline powder."
+          },
+          "composition": [
+            { "ar": "نيتروجين (N) 15%", "en": "Nitrogen (N) 15%" },
+            { "ar": "فوسفور (P₂O₅) 30%", "en": "Phosphorus (P₂O₅) 30%" },
+            { "ar": "بوتاسيوم (K₂O) 15%", "en": "Potassium (K₂O) 15%" }
+          ],
+          "benefits": [
+            { "ar": "يُستخدم كبادئ بعد الشتل ويعمل على زيادة نمو المجموع الجذري.", "en": "Used as a starter after transplanting to boost root development." },
+            { "ar": "يزيد كفاءة امتصاص العناصر ويسرّع عملية التزهير.", "en": "Improves nutrient uptake and accelerates flowering." },
+            { "ar": "يناسب جميع أنواع الأراضي وخاصة منخفضة المحتوى الغذائي.", "en": "Suitable for all soil types, especially nutrient-poor soils." },
+            { "ar": "يعمل على تبكير الإنتاج وزيادة المحصول وجودته.", "en": "Promotes earlier production and higher yield and quality." },
+            { "ar": "يُستخدم في شبكات الري بالتنقيط والرش الورقي.", "en": "Suitable for drip irrigation networks and foliar spraying." }
+          ],
+          "usage": [
+            { "ar": "رش ورقي: 2–4 كجم للفدان.", "en": "Foliar spray: 2–4 kg per acre." },
+            { "ar": "مع مياه الري بالتنقيط: 2–4 كجم للفدان.", "en": "With drip irrigation: 2–4 kg per acre." }
+          ]
+        },
+        {
+          "id": "queenTouch281010",
+          "name": { "ar": "كوين تاتش 28-10-10", "en": "Queen Touch 28-10-10" },
+          "tagline": { "ar": "سماد نيتروجيني عالي الذوبان", "en": "High-nitrogen water-soluble fertilizer" },
+          "image": "assets/queen-touch-28-10-10.jpeg",
+          "overview": {
+            "ar": "سماد عالي النيتروجين مع الفوسفور والبوتاسيوم وذوبان تام في الماء، يدعم النمو الخضري والتفريع ويوفّر جزءاً من احتياجات اليوريا. مسحوق بلوري أخضر.",
+            "en": "A high-nitrogen fertilizer with phosphorus and potassium and complete water solubility. Supports vegetative growth and branching while reducing urea requirements. Green crystalline powder."
+          },
+          "composition": [
+            { "ar": "نيتروجين (N) 28%", "en": "Nitrogen (N) 28%" },
+            { "ar": "فوسفور (P₂O₅) 10%", "en": "Phosphorus (P₂O₅) 10%" },
+            { "ar": "بوتاسيوم (K₂O) 10%", "en": "Potassium (K₂O) 10%" }
+          ],
+          "benefits": [
+            { "ar": "نسبة عالية من النيتروجين تحافظ على نمو المجموع الخضري ولون النبات.", "en": "High nitrogen maintains vegetative growth and healthy leaf color." },
+            { "ar": "يساعد في توفير جزء من احتياجات اليوريا (بنحو 50%).", "en": "Helps reduce urea requirements by around 50%." },
+            { "ar": "يدفع التفريع في محاصيل مثل البطيخ والطماطم والخيار والفاصوليا.", "en": "Promotes branching in crops such as watermelon, tomato, cucumber and beans." },
+            { "ar": "يعمل على زيادة المجموع الجذري.", "en": "Supports greater root development." },
+            { "ar": "البوتاسيوم يساعد على نقل المواد الغذائية إلى الثمار وزيادة التحجيم.", "en": "Potassium helps move nutrients to fruits and increases fruit sizing." }
+          ],
+          "usage": [
+            { "ar": "رش ورقي: 2–4 كجم للفدان.", "en": "Foliar spray: 2–4 kg per acre." },
+            { "ar": "مع مياه الري بالتنقيط: 2–4 كجم للفدان.", "en": "With drip irrigation: 2–4 kg per acre." }
+          ]
+        },
+        {
+          "id": "queenTouch5045",
+          "name": { "ar": "كوين تاتش 5-0-45", "en": "Queen Touch 5-0-45" },
+          "tagline": { "ar": "سماد بوتاسي عالي الذوبان", "en": "High-potassium water-soluble fertilizer" },
+          "image": "assets/queen-touch-5-0-45.jpeg",
+          "overview": {
+            "ar": "سماد بوتاسي عالي الذوبان في صورة بلورية، منخفض النيتروجين، يمنح تحكماً أفضل في التسميد النيتروجيني ويدعم بناء السكريات والنشا وتحجيم الثمار.",
+            "en": "A highly water-soluble crystalline potassium fertilizer with low nitrogen. It gives better control over nitrogen feeding and supports sugar and starch formation and fruit sizing."
+          },
+          "composition": [
+            { "ar": "نيتروجين (N) 5%", "en": "Nitrogen (N) 5%" },
+            { "ar": "فوسفور (P₂O₅) 0%", "en": "Phosphorus (P₂O₅) 0%" },
+            { "ar": "بوتاسيوم (K₂O) 45%", "en": "Potassium (K₂O) 45%" },
+            { "ar": "كبريت (S) 16.2%", "en": "Sulfur (S) 16.2%" }
+          ],
+          "benefits": [
+            { "ar": "منخفض النيتروجين فيمنح تحكماً أفضل في برامج التسميد النيتروجيني.", "en": "Low nitrogen gives better control over nitrogen fertilization programs." },
+            { "ar": "البوتاسيوم له دور في بناء السكريات والنشا ورفع الضغط الأسموزي.", "en": "Potassium supports sugar and starch formation and raises osmotic pressure." },
+            { "ar": "ينقل نواتج البناء الضوئي من أماكن الإنتاج إلى أماكن التخزين.", "en": "Moves photosynthesis products from production sites to storage sites." },
+            { "ar": "ينظّم فتح وغلق الثغور ويدعم تحمّل الإجهاد الناتج عن الملوحة.", "en": "Regulates stomatal opening and closing and supports salinity-stress tolerance." },
+            { "ar": "يساعد على زيادة أحجام الثمار وجودتها.", "en": "Helps increase fruit size and quality." }
+          ],
+          "usage": [
+            { "ar": "رش ورقي: 2–4 كجم للفدان.", "en": "Foliar spray: 2–4 kg per acre." },
+            { "ar": "مع مياه الري بالتنقيط: 2–4 كجم للفدان.", "en": "With drip irrigation: 2–4 kg per acre." }
+          ]
+        }
       ]
     },
     {
       "id": "liquid",
       "name": { "ar": "أسمدة سائلة", "en": "Liquid Fertilizers" },
       "products": [
-        { "id": "bigFood", "name": { "ar": "25-25-25 بيج فوود", "en": "Big Food 25-25-25" } },
-        { "id": "queenRoots", "name": { "ar": "15-30-6 كوين روتس", "en": "Queen Roots 15-30-6" } },
-        { "id": "phantomPower", "name": { "ar": "16-8-8 فانتوم باور بلس", "en": "Phantom Power Plus 16-8-8" } },
-        { "id": "apache", "name": { "ar": "أباتشي (KTS) 0-0-36 (S)", "en": "Apache (KTS) 0-0-36 (S)" } }
+        { "id": "bigFood", "orderable": false, "name": { "ar": "25-25-25 بيج فوود", "en": "Big Food 25-25-25" } },
+        { "id": "queenRoots", "orderable": false, "name": { "ar": "15-30-6 كوين روتس", "en": "Queen Roots 15-30-6" } },
+        { "id": "phantomPower", "orderable": false, "name": { "ar": "16-8-8 فانتوم باور بلس", "en": "Phantom Power Plus 16-8-8" } },
+        { "id": "apache", "orderable": false, "name": { "ar": "أباتشي (KTS) 0-0-36 (S)", "en": "Apache (KTS) 0-0-36 (S)" } }
       ]
     },
     {
       "id": "calcium",
-      "name": { "ar": "مركبات كالسيوم", "en": "Calcium Compounds" },
+      "name": { "ar": "مركبات الكالسيوم", "en": "Calcium Compounds" },
       "products": [
-        { "id": "borocal", "name": { "ar": "بوروكال", "en": "Borocal" } },
-        { "id": "magnocal", "name": { "ar": "مغنوكال", "en": "Magnocal" } },
-        { "id": "moksal", "name": { "ar": "موك سال", "en": "Mok Sal" } },
-        { "id": "nitrocal", "name": { "ar": "نيتروكال بورون", "en": "Nitrocal Boron" } }
+        { "id": "borocal", "orderable": false, "name": { "ar": "بوروكال", "en": "Borocal" } },
+        { "id": "magnocal", "orderable": false, "name": { "ar": "مغنوكال", "en": "Magnocal" } },
+        { "id": "moksal", "orderable": false, "name": { "ar": "موك سال", "en": "Mok Sal" } },
+        {
+          "id": "nitrocal",
+          "name": { "ar": "نيتروكال كوين", "en": "Nitrocal" },
+          "tagline": { "ar": "سماد كالسيوم وبورون سائل", "en": "Liquid calcium and boron fertilizer" },
+          "image": "assets/nitrocal.jpeg",
+          "overview": {
+            "ar": "تركيبة سائلة متميزة من الكالسيوم والبورون، تعالج نقص الكالسيوم وتقوّي جدار الخلايا وتزيد قدرة النبات على تحمّل الأمراض الفطرية والحشرية.",
+            "en": "A distinguished liquid combination of calcium and boron. It treats calcium deficiency, strengthens cell walls and increases the plant's tolerance of fungal and insect pests."
+          },
+          "composition": [
+            { "ar": "كالسيوم (Ca)", "en": "Calcium (Ca)" },
+            { "ar": "بورون (B)", "en": "Boron (B)" },
+            { "ar": "نيتروجين (N)", "en": "Nitrogen (N)" }
+          ],
+          "benefits": [
+            { "ar": "يدخل الكالسيوم في تركيب جدار الخلايا ويزيد قدرة النبات على مقاومة الأمراض.", "en": "Calcium is part of the cell wall and increases disease resistance." },
+            { "ar": "يعالج الأعراض الناتجة عن نقص الكالسيوم مثل عفن الطرف الزهري.", "en": "Treats symptoms of calcium deficiency such as blossom-end rot." },
+            { "ar": "البورون يزيد نسبة العقد ويعمل على تكوين البذور داخل الثمار.", "en": "Boron increases fruit set and supports seed formation inside fruits." },
+            { "ar": "ينقل الكربوهيدرات من أماكن الإنتاج إلى أماكن التخزين في النبات.", "en": "Moves carbohydrates from production sites to storage sites in the plant." },
+            { "ar": "يُستخدم في برامج التسميد للخضر والفاكهة والمحاصيل الحقلية.", "en": "Used in fertilization programs for vegetables, fruits and field crops." }
+          ],
+          "usage": [
+            { "ar": "رش ورقي: 250 سم لكل 200 لتر ماء.", "en": "Foliar spray: 250 ml per 200 L of water." },
+            { "ar": "يُكرَّر الرش حسب حاجة النبات وبرنامج التسميد.", "en": "Repeat according to plant needs and the fertilization program." }
+          ]
+        },
+        {
+          "id": "nitrocalMG",
+          "name": { "ar": "نيتروكال كوين MG", "en": "Nitrocal MG" },
+          "tagline": { "ar": "سماد كالسيوم ومغنيسيوم سائل", "en": "Liquid calcium and magnesium fertilizer" },
+          "image": "assets/nitrocal-mg.jpeg",
+          "overview": {
+            "ar": "سماد سائل غني بالكالسيوم والنيتروجين بالإضافة إلى المغنيسيوم، يعالج أعراض نقص الكالسيوم ويحسّن تكوين الكلوروفيل ونمو النبات.",
+            "en": "A liquid fertilizer rich in calcium and nitrogen plus magnesium. It treats calcium-deficiency symptoms and improves chlorophyll formation and plant growth."
+          },
+          "composition": [
+            { "ar": "كالسيوم (Ca)", "en": "Calcium (Ca)" },
+            { "ar": "نيتروجين (N)", "en": "Nitrogen (N)" },
+            { "ar": "مغنيسيوم (Mg)", "en": "Magnesium (Mg)" }
+          ],
+          "benefits": [
+            { "ar": "يعالج النقص الناتج عن نقص الكالسيوم مثل عفن الطرف الزهري في الطماطم والفلفل.", "en": "Treats calcium-deficiency symptoms such as blossom-end rot in tomato and pepper." },
+            { "ar": "يعالج التواء ثمار الخيار واحتراق حواف أوراق الخس.", "en": "Addresses twisted cucumber fruits and tip burn on lettuce leaves." },
+            { "ar": "يدعم امتلاء الحبوب في القمح.", "en": "Supports grain filling in wheat." },
+            { "ar": "النيتروجين ضروري لتكوين الكلوروفيل وزيادة المحصول.", "en": "Nitrogen is essential for chlorophyll formation and higher yield." },
+            { "ar": "المغنيسيوم يدخل في تركيب الكلوروفيل ويساعد على نقل السكريات.", "en": "Magnesium is part of chlorophyll and helps transport sugars." }
+          ],
+          "usage": [
+            { "ar": "رش ورقي: 750 مل للفدان.", "en": "Foliar spray: 750 ml per acre." },
+            { "ar": "مع مياه الري: 5 لتر للفدان.", "en": "With irrigation water: 5 L per acre." }
+          ]
+        }
       ]
     },
     {
       "id": "superphosphate",
-      "name": { "ar": "سوبر فوسفات المصرين المحبب و الناعم", "en": "Egyptians Granular and Fine Superphosphate" },
+      "name": { "ar": "سوبر فوسفات المصريين", "en": "Egyptians Superphosphate" },
       "products": [
-        { "id": "singleSuperphosphate", "name": { "ar": "سوبر فوسفات المصريين الأحادي المحبب (١٥٪ خامس أكسيد الفوسفور) SSP", "en": "Egyptians Granular Single Superphosphate (15% P₂O₅) SSP" } },
-        { "id": "tripleSuperphosphate", "name": { "ar": "سوبر فوسفات المصريين الثلاثي المحبب (٤٦٪ خامس أكسيد الفوسفور) TSP", "en": "Egyptians Granular Triple Superphosphate (46% P₂O₅) TSP" } }
+        { "id": "singleSuperphosphate", "orderable": false, "name": { "ar": "سوبر فوسفات المصريين الأحادي المحبب (١٥٪ خامس أكسيد الفوسفور) SSP", "en": "Egyptians Granular Single Superphosphate (15% P₂O₅) SSP" } },
+        { "id": "tripleSuperphosphate", "orderable": false, "name": { "ar": "سوبر فوسفات المصريين الثلاثي المحبب (٤٦٪ خامس أكسيد الفوسفور) TSP", "en": "Egyptians Granular Triple Superphosphate (46% P₂O₅) TSP" } }
+      ]
+    },
+    {
+      "id": "specialty",
+      "name": { "ar": "منتجات متخصصة", "en": "Specialty Products" },
+      "products": [
+        {
+          "id": "queenCopper",
+          "name": { "ar": "كوين كوبر", "en": "Queen Copper" },
+          "tagline": { "ar": "سماد نحاس سائل", "en": "Liquid copper fertilizer" },
+          "image": "assets/queen-copper.jpeg",
+          "overview": {
+            "ar": "سماد سائل لعلاج نقص النحاس في جميع أنواع المحاصيل، ويُستخدم أيضاً كمطهّر عام بعد التقليم وللمقاومة الوقائية للأمراض الفطرية والبكتيرية.",
+            "en": "A liquid fertilizer for treating copper deficiency in all crops. It is also used as a general disinfectant after pruning and for preventive control of fungal and bacterial diseases."
+          },
+          "composition": [
+            { "ar": "نحاس (Cu)", "en": "Copper (Cu)" },
+            { "ar": "مغنيسيوم (Mg)", "en": "Magnesium (Mg)" },
+            { "ar": "كبريت (S)", "en": "Sulfur (S)" }
+          ],
+          "benefits": [
+            { "ar": "يعالج نقص النحاس في جميع أنواع المحاصيل.", "en": "Treats copper deficiency across all crops." },
+            { "ar": "يُستخدم كمطهّر عام للأشجار بعد إجراء عملية التقليم.", "en": "Used as a general disinfectant for trees after pruning." },
+            { "ar": "يزيد قدرة النبات على مقاومة الأمراض الفطرية والبكتيرية.", "en": "Increases resistance to fungal and bacterial diseases." },
+            { "ar": "المغنيسيوم يدخل في تركيب الكلوروفيل اللازم للتمثيل الضوئي.", "en": "Magnesium is part of chlorophyll, which is needed for photosynthesis." },
+            { "ar": "الكبريت له دور في وقاية النبات من الطفيليات والأمراض.", "en": "Sulfur helps protect the plant against parasites and diseases." }
+          ],
+          "usage": [
+            { "ar": "الخضروات: 250 سم لكل 200 لتر ماء.", "en": "Vegetables: 250 ml per 200 L of water." },
+            { "ar": "البصل: 350 سم لكل 200 لتر ماء.", "en": "Onion: 350 ml per 200 L of water." },
+            { "ar": "أشجار الفاكهة: 250 سم لكل 200 لتر ماء.", "en": "Fruit trees: 250 ml per 200 L of water." },
+            { "ar": "بعد 30 يوماً من الزراعة، ويُكرَّر 2–3 مرات حسب الحاجة.", "en": "From 30 days after planting, repeated 2–3 times as needed." }
+          ]
+        },
+        {
+          "id": "queenZinc",
+          "name": { "ar": "كوين زنك", "en": "Queen Zinc" },
+          "tagline": { "ar": "زنك معقّد بأحماض أمينية", "en": "Zinc amino-acid complex" },
+          "image": "assets/queen-zinc.jpeg",
+          "overview": {
+            "ar": "مركّب زنك معقّد بأحماض أمينية، يوفّر علاجاً سريعاً وفعّالاً لأعراض نقص الزنك ويدعم الوظائف الفسيولوجية والخصوبة وجودة الثمار.",
+            "en": "A zinc complex with amino acids that provides fast, effective treatment of zinc-deficiency symptoms and supports physiological functions, fertility and fruit quality."
+          },
+          "composition": [
+            { "ar": "زنك (Zn) معقّد بأحماض أمينية", "en": "Zinc (Zn) complexed with amino acids" }
+          ],
+          "benefits": [
+            { "ar": "يوفّر علاجاً سريعاً وفعّالاً لأعراض نقص الزنك.", "en": "Provides fast and effective treatment of zinc-deficiency symptoms." },
+            { "ar": "يلعب دوراً خاصاً في عملية الإخصاب.", "en": "Plays a special role in the fertilization process." },
+            { "ar": "يعمل كمحفّز ومنشّط لمنظمات النمو داخل النبات.", "en": "Acts as a stimulant for growth regulators within the plant." },
+            { "ar": "يرفع جودة الثمار وينظّم عمليات النضج.", "en": "Improves fruit quality and regulates ripening." },
+            { "ar": "يساعد على التغلّب على العوامل البيئية غير الملائمة مثل العطش والحرارة والصقيع.", "en": "Helps overcome unfavorable environmental conditions such as drought, heat and frost." }
+          ],
+          "usage": [
+            { "ar": "أشجار الفاكهة: 250–350 سم لكل 200 لتر ماء، رشاً ورقياً.", "en": "Fruit trees: 250–350 ml per 200 L of water as a foliar spray." },
+            { "ar": "الخضروات: حسب شدة النقص وبرنامج التسميد.", "en": "Vegetables: according to deficiency severity and the fertilization program." },
+            { "ar": "لا يُخلط مع مركبات الفوسفور أو النحاس قبل إجراء تجربة خلط صغيرة.", "en": "Do not mix with phosphorus or copper compounds without a small jar test first." },
+            { "ar": "يُفضّل عدم استخدامه على أشجار البرقوق.", "en": "Preferably avoid use on plum trees." }
+          ]
+        },
+        {
+          "id": "queenBoronMo",
+          "name": { "ar": "كوين بورون موليبدنيوم (B+Mo)", "en": "Queen Boron + Molybdenum (B+Mo)" },
+          "tagline": { "ar": "بورون وموليبدينوم", "en": "Boron and molybdenum" },
+          "image": "assets/queen-boron-mo.jpeg",
+          "overview": {
+            "ar": "سماد ورقي من البورون والموليبدينوم يعمل على إحداث توازن بين المجموع الخضري والثمري، ويزيد الإنتاج والتلوين ونسبة السكر في الثمار.",
+            "en": "A foliar fertilizer of boron and molybdenum that balances vegetative and fruiting growth and increases yield, coloration and sugar content in fruits."
+          },
+          "composition": [
+            { "ar": "بورون (B) 10%", "en": "Boron (B) 10%" },
+            { "ar": "موليبدينوم (Mo) 1%", "en": "Molybdenum (Mo) 1%" }
+          ],
+          "benefits": [
+            { "ar": "يحدث توازناً بين المجموع الخضري والمجموع الثمري.", "en": "Balances vegetative growth with fruiting growth." },
+            { "ar": "البورون ينقل المواد الغذائية من جزء لآخر حسب متطلبات النبات.", "en": "Boron moves nutrients between plant parts according to plant requirements." },
+            { "ar": "يساهم في زيادة الإنتاج وتحسين اللون والطعم ونسبة السكر.", "en": "Contributes to higher yield and better color, taste and sugar content." },
+            { "ar": "يزيد من تجانس حجم الثمار وتلوينها.", "en": "Improves fruit size uniformity and coloration." },
+            { "ar": "يقلل من حدوث مرض القلب الأجوف في البطاطس.", "en": "Reduces the occurrence of hollow heart in potatoes." }
+          ],
+          "usage": [
+            { "ar": "الجرعة: 0.5–0.25 سم لكل لتر ماء.", "en": "Dose: 0.5–0.25 ml per liter of water." },
+            { "ar": "الجرعة: 4–2 سم لكل لتر ماء.", "en": "Dose: 4–2 ml per liter of water." },
+            { "ar": "الجرعة: 5–3 سم لكل لتر ماء حسب المحصول.", "en": "Dose: 5–3 ml per liter of water depending on the crop." }
+          ]
+        },
+        {
+          "id": "queenGrowth",
+          "name": { "ar": "كوين جروس", "en": "Queen Growth" },
+          "tagline": { "ar": "منشّط نمو طبيعي", "en": "Natural growth stimulant" },
+          "image": "assets/queen-growth.jpeg",
+          "overview": {
+            "ar": "منشّط سائل يحتوي على مستخلص الطحالب البحرية والأحماض الأمينية والعناصر النادرة، يزيد كفاءة الامتصاص ونشاط النبات خاصة في مراحل الإزهار والعقد.",
+            "en": "A liquid stimulant containing seaweed extract, amino acids and trace elements. It improves nutrient uptake and plant activity, especially during flowering and fruit set."
+          },
+          "composition": [
+            { "ar": "مستخلص الطحالب البحرية", "en": "Seaweed extract" },
+            { "ar": "أحماض أمينية", "en": "Amino acids" },
+            { "ar": "حمض الفولفيك", "en": "Fulvic acid" },
+            { "ar": "موليبدينوم", "en": "Molybdenum" }
+          ],
+          "benefits": [
+            { "ar": "يزيد فاعلية الأوعية الناقلة للعناصر الغذائية وكفاءة الامتصاص.", "en": "Improves the efficiency of nutrient-transport vessels and uptake." },
+            { "ar": "يزيد نشاط النبات خاصة في مراحل الإزهار والعقد.", "en": "Increases plant activity, especially at flowering and fruit set." },
+            { "ar": "يخلق تفاعلاً هرمونياً داخل النبات يحفّز النمو.", "en": "Creates a hormonal response inside the plant that stimulates growth." },
+            { "ar": "الموليبدينوم ضروري لاختزال النترات إلى أمونيا.", "en": "Molybdenum is essential for reducing nitrate to ammonia." },
+            { "ar": "الأحماض الأمينية تزيد قدرة النبات على تحمّل الإجهاد والظروف غير الملائمة.", "en": "Amino acids increase the plant's ability to tolerate stress and unfavorable conditions." }
+          ],
+          "usage": [
+            { "ar": "مع مياه الري: 500 سم للفدان.", "en": "With irrigation water: 500 ml per acre." },
+            { "ar": "رش ورقي: 250 سم لكل 200 لتر ماء.", "en": "Foliar spray: 250 ml per 200 L of water." }
+          ]
+        },
+        {
+          "id": "queenPowerPlus",
+          "name": { "ar": "كوين باور بلس", "en": "Queen Power Plus" },
+          "tagline": { "ar": "محفّز نمو طبيعي", "en": "Natural growth stimulator" },
+          "image": "assets/queen-power-plus.jpeg",
+          "overview": {
+            "ar": "محفّز نمو طبيعي من مستخلصات طبيعية وأحماض أمينية وعناصر صغرى، يزيد كثافة وحيوية الخلايا ويحفّز نمو المجموع الجذري وجودة الثمار.",
+            "en": "A natural growth stimulator made from natural extracts, amino acids and micronutrients. It increases cell density and vitality and stimulates root growth and fruit quality."
+          },
+          "composition": [
+            { "ar": "أحماض أمينية", "en": "Amino acids" },
+            { "ar": "مستخلص طحالب بحرية", "en": "Seaweed extract" },
+            { "ar": "حمض الجبريلين", "en": "Gibberellic acid" },
+            { "ar": "حمض الفولفيك", "en": "Fulvic acid" },
+            { "ar": "عناصر صغرى (حديد، زنك، منجنيز، نحاس، موليبدينوم)", "en": "Micronutrients (iron, zinc, manganese, copper, molybdenum)" },
+            { "ar": "كالسيوم، كبريت، نيتروجين، فوسفور، بوتاسيوم", "en": "Calcium, sulfur, nitrogen, phosphorus, potassium" }
+          ],
+          "benefits": [
+            { "ar": "يزيد كثافة وحيوية الخلايا النباتية.", "en": "Increases plant cell density and vitality." },
+            { "ar": "يمد النبات بكميات عالية من الطاقة اللازمة للنمو وانقسام الخلايا.", "en": "Supplies high amounts of energy for growth and cell division." },
+            { "ar": "يحفّز نمو المجموع الجذري ويساعد على زيادة التمثيل الغذائي.", "en": "Stimulates root growth and helps increase metabolism." },
+            { "ar": "يحسّن لون الثمار ويزيد صلابتها.", "en": "Improves fruit color and firmness." },
+            { "ar": "يساعد على استطالة النبات وزيادة إنتاجيته.", "en": "Supports plant elongation and higher productivity." }
+          ],
+          "usage": [
+            { "ar": "يُستخدم بعد 30 يوماً من الزراعة، ويُحدَّد المعدل حسب الحاجة.", "en": "Used from 30 days after planting; the rate is set according to need." },
+            { "ar": "يُستخدم مع مياه الري أو رشاً ورقياً حسب برنامج التسميد.", "en": "Applied with irrigation water or as a foliar spray according to the fertilization program." }
+          ]
+        },
+        {
+          "id": "queenMag",
+          "name": { "ar": "كوين مج", "en": "Queen Mag" },
+          "tagline": { "ar": "سماد مغنيسيوم", "en": "Magnesium fertilizer" },
+          "image": "assets/queen-mag.jpeg",
+          "overview": {
+            "ar": "سماد مغنيسيوم سائل يحتوي أيضاً على الكبريت، يعالج أعراض نقص المغنيسيوم ويدعم الكلوروفيل والتمثيل الضوئي ونقل السكريات.",
+            "en": "A liquid magnesium fertilizer that also contains sulfur. It treats magnesium-deficiency symptoms and supports chlorophyll, photosynthesis and sugar transport."
+          },
+          "composition": [
+            { "ar": "مغنيسيوم (Mg) 8.5%", "en": "Magnesium (Mg) 8.5%" },
+            { "ar": "كبريت (S) 5%", "en": "Sulfur (S) 5%" }
+          ],
+          "benefits": [
+            { "ar": "المغنيسيوم يحتل مركز جزىء الكلوروفيل ويمكّن النبات من استخدام الطاقة الشمسية.", "en": "Magnesium sits at the center of the chlorophyll molecule and enables the plant to use solar energy." },
+            { "ar": "ضروري لإتمام عملية التمثيل الضوئي وتمثيل الأحماض النووية.", "en": "Essential for photosynthesis and nucleic-acid synthesis." },
+            { "ar": "يعزّز امتصاص وانتقال الفوسفات وحركة السكريات داخل النبات.", "en": "Enhances phosphate uptake and transport and sugar movement within the plant." },
+            { "ar": "نقصه يقلّل تمثيل البروتينات ويعيق النمو.", "en": "Its deficiency reduces protein synthesis and hinders growth." },
+            { "ar": "الكبريت له دور في وقاية النبات من الطفيليات والأمراض.", "en": "Sulfur helps protect the plant against parasites and diseases." }
+          ],
+          "usage": [
+            { "ar": "رش ورقي: 250 سم لكل 200 لتر ماء.", "en": "Foliar spray: 250 ml per 200 L of water." },
+            { "ar": "يُكرَّر كل 5 أيام بدءاً من مرحلة 5–6 أوراق، مرتين.", "en": "Repeat every 5 days starting from the 5–6 leaf stage, twice." }
+          ]
+        },
+        {
+          "id": "queenVolvo",
+          "name": { "ar": "كوين فولفو 70%", "en": "Queen Volvo 70%" },
+          "tagline": { "ar": "محسّن تربة (حمض هيوميك 70%)", "en": "Soil conditioner (70% humic acid)" },
+          "image": "assets/queen-volvo-70.jpeg",
+          "overview": {
+            "ar": "محسّن تربة عضوي يحتوي على 70% حمض هيوميك قابل للذوبان التام في الماء، يحسّن بناء التربة ويزيد نشاط الجذور والكائنات الدقيقة.",
+            "en": "An organic soil conditioner containing 70% fully water-soluble humic acid. It improves soil structure and increases root and microbial activity."
+          },
+          "composition": [
+            { "ar": "حمض هيوميك 70% (ذوبان تام في الماء)", "en": "Humic acid 70% (fully water-soluble)" }
+          ],
+          "benefits": [
+            { "ar": "يزيد قدرة النبات على امتصاص العناصر الغذائية الموجودة في التربة.", "en": "Increases the plant's ability to absorb nutrients present in the soil." },
+            { "ar": "يحسّن بناء التربة ويمنع تشققها.", "en": "Improves soil structure and prevents cracking." },
+            { "ar": "يزيد قدرة الشعيرات الجذرية على امتصاص الماء والتنفس.", "en": "Improves root-hair water absorption and respiration." },
+            { "ar": "يقلّل ملوحة التربة ويقلّل خسائر العناصر.", "en": "Reduces soil salinity and nutrient losses." },
+            { "ar": "يزيد النشاط الميكروبيولوجي ويحفّز النمو والانقسام الخلوي.", "en": "Increases microbiological activity and stimulates growth and cell division." }
+          ],
+          "usage": [
+            { "ar": "مع مياه الري: 2–4 كجم للفدان.", "en": "With irrigation water: 2–4 kg per acre." },
+            { "ar": "رشاً ورقياً: 2–4 كجم للفدان.", "en": "Foliar spray: 2–4 kg per acre." }
+          ]
+        }
       ]
     }
   ]

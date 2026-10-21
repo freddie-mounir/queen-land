@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <meta name="description" content="">
+    <title>المنتجات | كوين لاند جروب</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Cairo', 'sans-serif'] }, colors: { queen: { gold: '#f7c800', ink: '#232323', body: '#6f6f6f', mist: '#f7f9fb', footer: '#1c1c1c' } } } } };
+    </script>
+    <link rel="stylesheet" href="./assets/site.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script>
+        (function () {
+            if (window.gsap && window.ScrollTrigger && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.documentElement.classList.add('gsap-init');
+                setTimeout(function () { document.documentElement.classList.remove('gsap-init'); }, 3000);
+            }
+        })();
+    </script>
+</head>
+<body class="antialiased" data-page="products" data-page-title="productsPageTitle" data-page-description="productsPageDescription">
+    <site-header></site-header>
+    <main class="pt-20">
+        <section class="hero-section flex min-h-[38vh] items-center justify-center px-4 text-center">
+            <div class="max-w-4xl py-14">
+                <p data-i18n="products" class="mb-3 font-bold text-queen-gold"></p>
+                <h1 data-product-name class="mb-4 text-4xl font-extrabold text-white md:text-5xl"></h1>
+                <p data-product-tagline class="text-lg font-semibold text-gray-100 md:text-xl"></p>
+            </div>
+        </section>
+
+        <section class="bg-white px-4 py-16 sm:px-6">
+            <div class="mx-auto max-w-6xl">
+                <a data-i18n="backToProducts" href="./products.html" class="mb-8 inline-flex items-center gap-2 rounded-full border border-gray-200 px-5 py-2 text-sm font-bold text-queen-ink transition hover:border-queen-gold hover:bg-queen-gold/10"></a>
+
+                <div data-product-body class="grid gap-10 lg:grid-cols-2 lg:items-start">
+                    <div class="lg:sticky lg:top-28">
+                        <img data-product-image src="" alt="" class="mx-auto max-h-[560px] w-full rounded-3xl border border-gray-100 bg-queen-mist object-contain p-3 shadow-sm">
+                    </div>
+                    <div>
+                        <p data-product-overview class="mb-8 text-lg leading-8 text-queen-body"></p>
+
+                        <div class="mb-8">
+                            <h2 class="mb-4 flex items-center gap-3 text-xl font-extrabold text-queen-ink">
+                                <span class="flex h-9 w-9 items-center justify-center rounded-full bg-queen-gold/20 text-sm"><i class="fa-solid fa-flask" aria-hidden="true"></i></span>
+                                <span data-i18n="productComposition"></span>
+                            </h2>
+                            <ul data-product-composition class="flex flex-wrap gap-2"></ul>
+                        </div>
+
+                        <div class="mb-8">
+                            <h2 class="mb-4 flex items-center gap-3 text-xl font-extrabold text-queen-ink">
+                                <span class="flex h-9 w-9 items-center justify-center rounded-full bg-queen-gold/20 text-sm"><i class="fa-solid fa-seedling" aria-hidden="true"></i></span>
+                                <span data-i18n="productBenefits"></span>
+                            </h2>
+                            <ul data-product-benefits class="space-y-3"></ul>
+                        </div>
+
+                        <div class="mb-10">
+                            <h2 class="mb-4 flex items-center gap-3 text-xl font-extrabold text-queen-ink">
+                                <span class="flex h-9 w-9 items-center justify-center rounded-full bg-queen-gold/20 text-sm"><i class="fa-solid fa-droplet" aria-hidden="true"></i></span>
+                                <span data-i18n="productUsage"></span>
+                            </h2>
+                            <ul data-product-usage class="space-y-3"></ul>
+                        </div>
+
+                        <a data-i18n="requestQuote" data-request-quote href="./products.html#quote" class="inline-flex rounded-full bg-queen-gold px-8 py-3 font-bold text-queen-ink transition hover:bg-yellow-400"></a>
+                    </div>
+                </div>
+
+                <div data-product-notfound hidden class="mx-auto max-w-2xl rounded-3xl border border-gray-100 bg-queen-mist px-6 py-16 text-center">
+                    <span class="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-queen-gold/20 text-2xl text-queen-ink"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i></span>
+                    <h2 data-i18n="productNotFound" class="mb-3 text-2xl font-extrabold text-queen-ink"></h2>
+                    <p data-i18n="productNotFoundHelp" class="mb-6 leading-7 text-queen-body"></p>
+                    <a data-i18n="backToProducts" href="./products.html" class="inline-flex rounded-full bg-queen-gold px-7 py-3 font-bold text-queen-ink transition hover:bg-yellow-400"></a>
+                </div>
+            </div>
+        </section>
+
+        <div data-related-section hidden class="bg-queen-mist px-4 py-16 sm:px-6">
+            <div class="mx-auto max-w-6xl">
+                <h2 data-i18n="relatedProducts" class="mb-8 text-center text-2xl font-extrabold text-queen-ink md:text-3xl"></h2>
+                <div data-related-grid class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4"></div>
+            </div>
+        </div>
+    </main>
+    <site-footer></site-footer>
+    <script src="./assets/components.js"></script>
+    <script src="./assets/site.js"></script>
+    <script src="./assets/animations.js"></script>
+    <script src="./assets/product.js"></script>
+</body>
+</html>

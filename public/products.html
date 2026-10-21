@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <meta name="description" content="">
     <title>المنتجات | كوين لاند جروب</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,14 +34,16 @@
     <main class="pt-20">
         <section class="hero-section flex min-h-[42vh] items-center justify-center px-4 text-center"><div class="max-w-4xl py-16"><p data-i18n="products" class="mb-3 font-bold text-queen-gold"></p><h1 data-i18n="newProducts" class="mb-5 text-4xl font-extrabold text-white md:text-6xl"></h1><p data-i18n="productPageIntro" class="text-xl font-semibold text-gray-100 md:text-2xl"></p></div></section>
         <section class="bg-queen-mist py-12"><div class="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8"><p data-i18n="productPageLead" class="mx-auto max-w-3xl text-lg leading-8 text-queen-body"></p></div></section>
-        <section class="bg-queen-mist pb-20"><div class="mx-auto grid max-w-7xl grid-cols-1 gap-6 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8">
-            <article id="suspensions" class="hover-card overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm"><img data-i18n-alt="suspensions" src="https://queenland-group.com/images/Products/2023-08-10-07-22-20WhatsApp%20Image%202023-08-10%20at%2010.20.27%20AM.jpeg" alt="" class="h-48 w-full object-cover"><div class="p-6"><h2 data-i18n="suspensions" class="mb-4 text-xl font-extrabold text-queen-ink"></h2><ul class="space-y-2 text-sm leading-relaxed"><li data-i18n="productSuspension20"></li><li data-i18n="productSuspension22"></li><li data-i18n="productSuspension19"></li></ul></div></article>
-            <article id="liquid-fertilizers" class="hover-card overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm"><img data-i18n-alt="liquid" src="https://queenland-group.com/images/Products/2023-08-09-11-09-07_WhatsApp%20Image%202023-08-09%20at%202.08.24%20PM.jpeg" alt="" class="h-48 w-full object-cover"><div class="p-6"><h2 data-i18n="liquid" class="mb-4 text-xl font-extrabold text-queen-ink"></h2><ul class="space-y-2 text-sm leading-relaxed"><li data-i18n="bigFood"></li><li data-i18n="queenRoots"></li><li data-i18n="phantomPower"></li><li data-i18n="apache"></li></ul></div></article>
-            <article id="calcium-compounds" class="hover-card overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm"><img data-i18n-alt="calcium" src="https://queenland-group.com/images/Products/2023-08-09-10-31-18_WhatsApp%20Image%202023-08-09%20at%201.29.43%20PM.jpeg" alt="" class="h-48 w-full object-cover"><div class="p-6"><h2 data-i18n="calcium" class="mb-4 text-xl font-extrabold text-queen-ink"></h2><ul class="space-y-2 text-sm leading-relaxed"><li data-i18n="borocal"></li><li data-i18n="magnocal"></li><li data-i18n="moksal"></li><li data-i18n="nitrocal"></li></ul></div></article>
-            <article id="superphosphates" class="hover-card overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm"><img data-i18n-alt="superphosphate" src="https://queenland-group.com/images/Products/2023-08-09-10-48-03_WhatsApp%20Image%202023-08-09%20at%201.46.18%20PM.jpeg" alt="" class="h-48 w-full object-cover"><div class="p-6"><h2 data-i18n="superphosphate" class="mb-4 text-xl font-extrabold text-queen-ink"></h2><ul class="space-y-2 text-sm leading-relaxed"><li data-i18n="singleSuperphosphate"></li><li data-i18n="tripleSuperphosphate"></li></ul></div></article>
-        </div><p data-i18n="productRange" class="mx-auto mt-8 max-w-4xl px-4 text-center text-sm leading-7 text-queen-body"></p></section>
+        <section class="bg-queen-mist pb-16">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div data-product-grid class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                    <p data-i18n="productsLoading" class="col-span-full text-center text-queen-body"></p>
+                </div>
+                <p data-i18n="productRange" class="mx-auto mt-10 max-w-4xl text-center text-sm leading-7 text-queen-body"></p>
+            </div>
+        </section>
         <section class="bg-white py-14 text-center"><div class="mx-auto max-w-3xl px-4"><h2 data-i18n="contact" class="mb-4 text-2xl font-extrabold text-queen-ink"></h2><a data-i18n="messageUs" href="./contact.html" class="inline-flex rounded-full bg-queen-gold px-7 py-3 font-bold text-queen-ink transition hover:bg-yellow-400"></a></div></section>
-        <section class="bg-queen-mist py-16 md:py-20">
+        <section id="quote" class="scroll-mt-24 bg-queen-mist py-16 md:py-20">
             <div class="mx-auto max-w-3xl px-4 sm:px-6">
                 <div class="mb-10 text-center" data-aos="fade-up">
                     <p data-i18n="products" class="mb-2 text-sm font-extrabold uppercase tracking-widest text-queen-gold"></p>
@@ -88,6 +94,7 @@
     <script src="./assets/components.js"></script>
     <script src="./assets/site.js"></script>
     <script src="./assets/animations.js"></script>
+    <script src="./assets/product-grid.js"></script>
     <script src="./assets/quote-form.js"></script>
 </body>
 </html>
