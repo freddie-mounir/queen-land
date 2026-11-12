@@ -1,3 +1,8 @@
+html {
+    overflow-x: hidden;
+    overflow-x: clip;
+}
+
 body {
     font-family: 'Cairo', sans-serif;
     overflow-x: hidden;
@@ -69,6 +74,13 @@ site-footer {
         url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
     background-size: cover;
     background-position: center;
+}
+
+/* Tractor driving band under the hero */
+.tractor-mover {
+    will-change: transform;
+    transform-origin: 50% 100%;
+    backface-visibility: hidden;
 }
 
 .hover-card {

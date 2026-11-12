@@ -193,8 +193,8 @@
             );
         });
 
-        /* ---------------- Gentle float for gold accents ---------------- */
-        gsap.utils.toArray('main .border-2.border-queen-gold').forEach(function (el) {
+        /* ---------------- Gentle float for the brand logo ---------------- */
+        gsap.utils.toArray('main .logo-float').forEach(function (el) {
             gsap.to(el, {
                 y: -12,
                 duration: 2.6,
@@ -203,6 +203,71 @@
                 repeat: -1,
             });
         });
+
+        /* ---------------- Tractor driving across the field ---------------- */
+        var tractorSection = document.querySelector('.tractor-section');
+        var tractorTrack = document.querySelector('.tractor-track');
+        var tractor = document.querySelector('.tractor-mover');
+        if (tractorSection && tractorTrack && tractor) {
+            // 1 = the artwork faces right, -1 = the artwork faces left.
+            var TRACTOR_FACING = 1;
+            var tractorTimeline = null;
+            var tractorBob = null;
+            var tractorVisible = true;
+
+            function setTractorPlaying(playing) {
+                if (tractorTimeline) {
+                    if (playing) tractorTimeline.play();
+                    else tractorTimeline.pause();
+                }
+                if (tractorBob) {
+                    if (playing) tractorBob.play();
+                    else tractorBob.pause();
+                }
+            }
+
+            function buildTractor() {
+                if (tractorTimeline) tractorTimeline.kill();
+                if (tractorBob) tractorBob.kill();
+                var distance = Math.max(0, tractorTrack.clientWidth - tractor.offsetWidth);
+                if (!distance) return;
+                gsap.set(tractor, { x: 0, y: 0, scaleX: TRACTOR_FACING, transformOrigin: '50% 100%' });
+                tractorTimeline = gsap.timeline({ repeat: -1 });
+                tractorTimeline
+                    .to(tractor, { x: distance, duration: 10, ease: 'sine.inOut' })
+                    .to(tractor, { scaleX: -TRACTOR_FACING, duration: 0.5, ease: 'sine.inOut' }, '+=0.15')
+                    .to(tractor, { x: 0, duration: 10, ease: 'sine.inOut' }, '+=0.15')
+                    .to(tractor, { scaleX: TRACTOR_FACING, duration: 0.5, ease: 'sine.inOut' }, '+=0.15');
+                tractorBob = gsap.to(tractor, {
+                    y: -3,
+                    duration: 0.7,
+                    ease: 'sine.inOut',
+                    yoyo: true,
+                    repeat: -1,
+                });
+                setTractorPlaying(tractorVisible);
+            }
+
+            ScrollTrigger.create({
+                trigger: tractorSection,
+                start: 'top bottom',
+                end: 'bottom top',
+                onToggle: function (self) {
+                    tractorVisible = self.isActive;
+                    setTractorPlaying(tractorVisible);
+                },
+            });
+
+            var tractorRect = tractorSection.getBoundingClientRect();
+            tractorVisible = tractorRect.top < window.innerHeight && tractorRect.bottom > 0;
+            buildTractor();
+
+            var tractorResizeTimer;
+            window.addEventListener('resize', function () {
+                window.clearTimeout(tractorResizeTimer);
+                tractorResizeTimer = window.setTimeout(buildTractor, 180);
+            });
+        }
 
         /* ---------------- Number counters ---------------- */
         gsap.utils.toArray('[data-counter]').forEach(function (el) {
